@@ -166,7 +166,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-/* Bouton flèche en haut à droite */
+/* Transition de rotation de la flèche */
 .gearset-toggle {
   position: absolute;
   top: 12px;
@@ -174,7 +174,14 @@ h1 {
   font-size: 1.5rem;
   cursor: pointer;
   user-select: none;
+  transition: transform 0.3s ease;
 }
+
+/* Rotation quand la carte est ouverte */
+.gearset.open .gearset-toggle {
+  transform: rotate(180deg);
+}
+
 
 /* Ligne des sorts */
 .spells-row {
