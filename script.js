@@ -122,21 +122,18 @@ function showGearsets(roleId) {
     link.appendChild(image);
     imageContainer.appendChild(link);
 
-    // Clic sur toggle (et non toute la carte)
-    toggleButton.addEventListener('click', (e) => {
-      e.stopPropagation(); // Empêche la propagation au parent
+    // Gestion du clic sur toute la carte
+    gearsetDiv.addEventListener('click', () => {
       const isOpen = gearsetDiv.classList.contains('open');
-
+    
       document.querySelectorAll('.gearset.open').forEach(other => {
         if (other !== gearsetDiv) {
           other.classList.remove('open');
-          const ic = other.querySelector('.gearset-image');
           const arrow = other.querySelector('.gearset-toggle');
-          ic.style.maxHeight = null;
           arrow.textContent = '🡻';
         }
       });
-
+    
       if (isOpen) {
         gearsetDiv.classList.remove('open');
         toggleButton.textContent = '🡻';
@@ -145,6 +142,11 @@ function showGearsets(roleId) {
         toggleButton.textContent = '🡹';
       }
     });
+
+    toggleButton.addEventListener('click', (e) => {
+      e.stopPropagation(); // Evite double toggle si clique pile sur la flèche
+    });
+
 
     // Assemblement final
     gearsetDiv.appendChild(toggleButton);
