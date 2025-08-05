@@ -3,19 +3,19 @@ const gearsets = {
   tank: [
     {
       title: "Tank Set #1",
-      image: "images/tank1.jpg",
+      image: "images/tank1.png",
       link: "https://example.com/tank1"
     },
     {
       title: "Tank Set #2",
-      image: "images/tank2.jpg",
+      image: "images/tank2.png",
       link: "https://example.com/tank2"
     }
   ],
   healer: [
     {
       title: "Healer Build #1",
-      image: "images/healer1.jpg",
+      image: "images/healer1.png",
       link: "https://example.com/healer1"
     }
   ],
