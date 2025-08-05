@@ -91,11 +91,17 @@ h1 {
 }
 
 .gearset h3 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;         /* augmenté */
   color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  user-select: none;
 }
+
 
 /* Image cachée au début, visible au clic */
 .gearset img {
