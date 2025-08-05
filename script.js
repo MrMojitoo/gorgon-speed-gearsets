@@ -139,11 +139,9 @@ function showGearsets(roleId) {
 
       if (isOpen) {
         gearsetDiv.classList.remove('open');
-        imageContainer.style.maxHeight = null;
         toggleButton.textContent = '🡻';
       } else {
         gearsetDiv.classList.add('open');
-        imageContainer.style.maxHeight = image.scrollHeight + "px";
         toggleButton.textContent = '🡹';
       }
     });
