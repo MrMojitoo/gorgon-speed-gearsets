@@ -126,22 +126,13 @@ function showGearsets(roleId) {
     gearsetDiv.addEventListener('click', () => {
       const isOpen = gearsetDiv.classList.contains('open');
     
-      document.querySelectorAll('.gearset.open').forEach(other => {
-        if (other !== gearsetDiv) {
-          other.classList.remove('open');
-          const arrow = other.querySelector('.gearset-toggle');
-          arrow.textContent = '🡻';
-        }
-      });
-    
       if (isOpen) {
         gearsetDiv.classList.remove('open');
-        toggleButton.textContent = '🡻';
       } else {
         gearsetDiv.classList.add('open');
-        toggleButton.textContent = '🡹';
       }
     });
+
 
     toggleButton.addEventListener('click', (e) => {
       e.stopPropagation(); // Evite double toggle si clique pile sur la flèche
