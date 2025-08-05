@@ -83,6 +83,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .gearset:hover {
@@ -165,3 +166,33 @@ h1 {
   margin-bottom: 5px;
 }
 
+/* Bouton flèche en haut à droite */
+.gearset-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Ligne des sorts */
+.spells-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.spell-group {
+  display: flex;
+  gap: 10px;
+}
+
+.spell-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
