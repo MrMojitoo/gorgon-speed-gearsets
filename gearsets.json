@@ -20,7 +20,7 @@
             { "icon": "icons/artifact-weapon.png", "name": "Void Cleaver" },
             { "icon": "icons/artifact-jewellery.png", "name": "Amulet of Resilience" }
           ]
-        }
+        },
         {
           "title": "Tank Set #2",
           "image": "images/tank2.png",
@@ -42,4 +42,5 @@
     }
   ]
 }
+
 
