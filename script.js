@@ -1,47 +1,46 @@
-// Base de données des gearsets pour chaque rôle
-const gearsets = {
-  tank: [
-    {
-      title: "Tank Set #1",
-      image: "images/tank1.png",
-      link: "https://example.com/tank1"
-    },
-    {
-      title: "Tank Set #2",
-      image: "images/tank2.png",
-      link: "https://example.com/tank2"
-    }
-  ],
-  healer: [
-    {
-      title: "Healer Build #1",
-      image: "images/healer1.png",
-      link: "https://example.com/healer1"
-    }
-  ],
-  // Ajoute ici les autres rôles de la même manière
-};
+let allRoles = [];
 
-// Gestion du clic sur les boutons de rôle
-document.querySelectorAll('#roles button').forEach(button => {
-  button.addEventListener('click', () => {
-    const role = button.getAttribute('data-role');
-    showGearsets(role);
+fetch('gearsets.json')
+  .then(response => response.json())
+  .then(data => {
+    allRoles = data.roles;
+    createRoleButtons();
   });
-});
 
-// Affichage des gearsets
-function showGearsets(role) {
+function createRoleButtons() {
+  const rolesDiv = document.getElementById('roles');
+  rolesDiv.innerHTML = '';
+
+  allRoles.forEach(role => {
+    const button = document.createElement('button');
+    button.setAttribute('data-role', role.id);
+
+    const icon = document.createElement('img');
+    icon.src = role.icon;
+    icon.alt = role.name;
+
+    button.appendChild(icon);
+    button.append(role.name);
+
+    button.addEventListener('click', () => {
+      showGearsets(role.id);
+    });
+
+    rolesDiv.appendChild(button);
+  });
+}
+
+function showGearsets(roleId) {
   const container = document.getElementById('gearsets-container');
-  container.innerHTML = ''; // Efface les gearsets précédents
+  container.innerHTML = '';
 
-  const sets = gearsets[role];
-  if (!sets) {
-    container.innerHTML = "<p>Aucun gearset disponible pour ce rôle.</p>";
+  const role = allRoles.find(r => r.id === roleId);
+  if (!role || !role.gearsets.length) {
+    container.innerHTML = '<p>Aucun gearset disponible pour ce rôle.</p>';
     return;
   }
 
-  sets.forEach(set => {
+  role.gearsets.forEach(set => {
     const gearsetDiv = document.createElement('div');
     gearsetDiv.className = 'gearset';
 

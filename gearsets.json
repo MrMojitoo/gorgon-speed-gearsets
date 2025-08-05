@@ -1,0 +1,33 @@
+{
+  "roles": [
+    {
+      "id": "tank",
+      "name": "Tank",
+      "icon": "icons/tank.png",
+      "gearsets": [
+        {
+          "title": "Tank Set #1",
+          "image": "images/tank1.png",
+          "link": "https://example.com/tank1"
+        },
+        {
+          "title": "Tank Set #2",
+          "image": "images/tank2.png",
+          "link": "https://example.com/tank2"
+        }
+      ]
+    },
+    {
+      "id": "healer",
+      "name": "Healer",
+      "icon": "icons/healer.png",
+      "gearsets": [
+        {
+          "title": "Healer Set #1",
+          "image": "images/healer1.png",
+          "link": "https://example.com/healer1"
+        }
+      ]
+    }
+  ]
+}
