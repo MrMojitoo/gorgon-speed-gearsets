@@ -40,25 +40,44 @@ function showGearsets(roleId) {
     return;
   }
 
-  role.gearsets.forEach(set => {
+  role.gearsets.forEach((set, index) => {
     const gearsetDiv = document.createElement('div');
     gearsetDiv.className = 'gearset';
+    gearsetDiv.setAttribute('data-index', index);
 
     const title = document.createElement('h3');
     title.textContent = set.title;
 
-    const link = document.createElement('a');
-    link.href = set.link;
-    link.target = '_blank';
+    // Zone où l'image sera injectée dynamiquement
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'gearset-image';
+    imageContainer.style.display = 'none'; // cachée par défaut
 
-    const image = document.createElement('img');
-    image.src = set.image;
-    image.alt = set.title;
+    // Gestion du clic sur le titre
+    gearsetDiv.addEventListener('click', () => {
+      if (imageContainer.style.display === 'none') {
+        imageContainer.style.display = 'block';
 
-    link.appendChild(image);
+        // Ajouter l'image (si non déjà ajoutée)
+        if (!imageContainer.hasChildNodes()) {
+          const link = document.createElement('a');
+          link.href = set.link;
+          link.target = '_blank';
+
+          const image = document.createElement('img');
+          image.src = set.image;
+          image.alt = set.title;
+
+          link.appendChild(image);
+          imageContainer.appendChild(link);
+        }
+      } else {
+        imageContainer.style.display = 'none';
+      }
+    });
+
     gearsetDiv.appendChild(title);
-    gearsetDiv.appendChild(link);
-
+    gearsetDiv.appendChild(imageContainer);
     container.appendChild(gearsetDiv);
   });
 }
