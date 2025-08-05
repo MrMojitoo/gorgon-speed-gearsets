@@ -64,7 +64,7 @@
           "title": "BB/Burna Echidna",
           "subtitle": "Changing Amulet only",
           "stats": "304/25/350/25/16",
-          "image": "images/BB_Burna_Trash.png",
+          "image": "images/BB_Burna_Echidna.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/9va11zokk4reo7n7",
           "weapon1": { 
             "icon": "icons/dunebornhollow.webp", 
@@ -78,6 +78,33 @@
           "weapon2": { 
             "icon": "icons/burnanator.webp", 
             "name": "Burnanator" ,
+            "spells": [
+              "spells/meteorshower.png",
+              "spells/fireball.png",
+              "spells/pillar.png"
+            ]
+          },
+          "artifactArmor": { "icon": "icons/oldcrown.png", "name": "Old Crown" },
+          "artifactJewellery": { "icon": "icons/endlessthirst.png", "name": "Endless Thirst" }
+        },
+        {
+          "title": "BB/Inferno Typhon",
+          "subtitle": "Changing Amulet and FS and gloves (only use Meteor)",
+          "stats": "304/25/350/25/16",
+          "image": "images/BB_Burna_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/qpaldow_3rvb67vj",
+          "weapon1": { 
+            "icon": "icons/dunebornhollow.webp", 
+            "name": "Duneborn Hollow",
+            "spells": [
+              "spells/grenade.png",
+              "spells/azothshrapnelblast.png",
+              "spells/netshot.png"
+            ]
+          },
+          "weapon2": { 
+            "icon": "icons/inferno.webp", 
+            "name": "Inferno" ,
             "spells": [
               "spells/meteorshower.png",
               "spells/fireball.png",
@@ -103,6 +130,7 @@
     }
   ]
 }
+
 
 
 
