@@ -3,7 +3,7 @@
     {
       "id": "tank",
       "name": "Tank",
-      "icon": "icons/tank.png",
+      "icon": "icons/1tank.png",
       "gearsets": [
         {
           "title": "Tank Set #1",
@@ -18,14 +18,14 @@
       ]
     },
     {
-      "id": "healer",
-      "name": "Healer",
-      "icon": "icons/healer.png",
+      "id": "VGhealer",
+      "name": "VG Healer",
+      "icon": "icons/5VG.png",
       "gearsets": [
         {
           "title": "Healer Set #1",
           "image": "images/healer1.png",
-          "link": "https://example.com/healer1"
+          "link": "https://www.nw-buddy.de/gearsets/local/23onnbttqhpk61y1"
         }
       ]
     }
