@@ -40,20 +40,19 @@ function showGearsets(roleId) {
     return;
   }
 
-  let openGearset = null;
-
   role.gearsets.forEach((set, index) => {
     const gearsetDiv = document.createElement('div');
     gearsetDiv.className = 'gearset';
     gearsetDiv.setAttribute('data-index', index);
 
-    // Titre + icône flèche
+    // Bouton de toggle (flèche), positionné en haut à droite
+    const toggleButton = document.createElement('div');
+    toggleButton.className = 'gearset-toggle';
+    toggleButton.textContent = '🡻';
+
+    // Titre centré
     const title = document.createElement('h3');
     title.textContent = set.title;
-
-    const arrowIcon = document.createElement('span');
-    arrowIcon.textContent = '🡻';
-    title.appendChild(arrowIcon);
 
     // Sous-titre + stats
     const subtitle = document.createElement('p');
@@ -64,7 +63,7 @@ function showGearsets(roleId) {
     stats.textContent = set.stats || '';
     stats.className = 'stats';
 
-    // Ligne avec 4 objets : weapon1, weapon2, artifactArmor, artifactJewellery
+    // Icones d'équipement : weapon1, weapon2, artifactArmor, artifactJewellery
     const iconRow = document.createElement('div');
     iconRow.className = 'icon-row';
 
@@ -87,7 +86,28 @@ function showGearsets(roleId) {
       }
     });
 
-    // Image (conteneur caché avec animation)
+    // Sorts des deux armes
+    const spellRow = document.createElement('div');
+    spellRow.className = 'spells-row';
+
+    [set.weapon1, set.weapon2].forEach((weapon, i) => {
+      if (weapon && Array.isArray(weapon.spells)) {
+        const spellGroup = document.createElement('div');
+        spellGroup.className = 'spell-group';
+
+        weapon.spells.forEach(icon => {
+          const img = document.createElement('img');
+          img.src = icon;
+          img.alt = 'spell';
+          img.className = 'spell-icon';
+          spellGroup.appendChild(img);
+        });
+
+        spellRow.appendChild(spellGroup);
+      }
+    });
+
+    // Conteneur d'image (affiché au clic)
     const imageContainer = document.createElement('div');
     imageContainer.className = 'gearset-image';
 
@@ -102,37 +122,39 @@ function showGearsets(roleId) {
     link.appendChild(image);
     imageContainer.appendChild(link);
 
-    // Clic sur la carte → toggle unique
-    gearsetDiv.addEventListener('click', () => {
+    // Clic sur toggle (et non toute la carte)
+    toggleButton.addEventListener('click', (e) => {
+      e.stopPropagation(); // Empêche la propagation au parent
       const isOpen = gearsetDiv.classList.contains('open');
 
-      // Ferme les autres
       document.querySelectorAll('.gearset.open').forEach(other => {
         if (other !== gearsetDiv) {
           other.classList.remove('open');
           const ic = other.querySelector('.gearset-image');
-          const arrow = other.querySelector('h3 span');
+          const arrow = other.querySelector('.gearset-toggle');
           ic.style.maxHeight = null;
           arrow.textContent = '🡻';
         }
       });
 
-      // Toggle ce gearset
       if (isOpen) {
         gearsetDiv.classList.remove('open');
         imageContainer.style.maxHeight = null;
-        arrowIcon.textContent = '🡻';
+        toggleButton.textContent = '🡻';
       } else {
         gearsetDiv.classList.add('open');
         imageContainer.style.maxHeight = image.scrollHeight + "px";
-        arrowIcon.textContent = '🡹';
+        toggleButton.textContent = '🡹';
       }
     });
 
+    // Assemblement final
+    gearsetDiv.appendChild(toggleButton);
     gearsetDiv.appendChild(title);
     gearsetDiv.appendChild(subtitle);
     gearsetDiv.appendChild(stats);
-    gearsetDiv.appendChild(iconRow); // Nouvelle ligne ici
+    gearsetDiv.appendChild(iconRow);
+    gearsetDiv.appendChild(spellRow); // nouvelle ligne des sorts
     gearsetDiv.appendChild(imageContainer);
     container.appendChild(gearsetDiv);
   });
