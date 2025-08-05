@@ -196,3 +196,8 @@ h1 {
   border-radius: 6px;
   border: 1px solid #444;
 }
+
+/* Quand la carte est ouverte, l'image devient visible */
+.gearset.open .gearset-image {
+  max-height: 1000px; /* valeur suffisante pour toutes les tailles d'image */
+}
