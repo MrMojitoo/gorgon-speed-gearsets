@@ -82,30 +82,36 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* occupe toute la colonne */
+  cursor: pointer;
 }
 
 .gearset:hover {
   transform: scale(1.02);
+  background-color: #292929;
 }
 
 .gearset h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-/* Image non déformée */
+/* Image cachée au début, visible au clic */
 .gearset img {
   max-width: 100%;
-  height: auto;                /* conserve les proportions */
+  height: auto;
+  margin-top: 10px;
   border-radius: 8px;
   border: 2px solid #3f51b5;
   transition: opacity 0.2s ease;
-  display: block;
-  margin: 0 auto;
 }
+
+.gearset-image {
+  width: 100%;
+  text-align: center;
+}
+
 
 /* Zoom optionnel au hover */
 .gearset img:hover {
