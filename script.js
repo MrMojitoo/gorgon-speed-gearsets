@@ -45,39 +45,38 @@ function showGearsets(roleId) {
     gearsetDiv.className = 'gearset';
     gearsetDiv.setAttribute('data-index', index);
 
+    // Crée le titre et l'icône
     const title = document.createElement('h3');
     title.textContent = set.title;
 
-    // Zone où l'image sera injectée dynamiquement
+    const arrowIcon = document.createElement('span');
+    arrowIcon.textContent = '🡻'; // flèche vers le bas
+    title.appendChild(arrowIcon);
+
     const imageContainer = document.createElement('div');
     imageContainer.className = 'gearset-image';
-    imageContainer.style.display = 'none'; // cachée par défaut
+    imageContainer.style.display = 'none';
 
-    // Gestion du clic sur le titre
     gearsetDiv.addEventListener('click', () => {
-      if (imageContainer.style.display === 'none') {
-        imageContainer.style.display = 'block';
-
-        // Ajouter l'image (si non déjà ajoutée)
-        if (!imageContainer.hasChildNodes()) {
-          const link = document.createElement('a');
-          link.href = set.link;
-          link.target = '_blank';
-
-          const image = document.createElement('img');
-          image.src = set.image;
-          image.alt = set.title;
-
-          link.appendChild(image);
-          imageContainer.appendChild(link);
-        }
-      } else {
-        imageContainer.style.display = 'none';
-      }
+      const isVisible = imageContainer.style.display === 'block';
+      imageContainer.style.display = isVisible ? 'none' : 'block';
+      arrowIcon.textContent = isVisible ? '🡻' : '🡹'; // change l’icône
     });
 
     gearsetDiv.appendChild(title);
     gearsetDiv.appendChild(imageContainer);
     container.appendChild(gearsetDiv);
+
+    // Génère l’image (ne le fait qu'une fois)
+    const link = document.createElement('a');
+    link.href = set.link;
+    link.target = '_blank';
+
+    const image = document.createElement('img');
+    image.src = set.image;
+    image.alt = set.title;
+
+    link.appendChild(image);
+    imageContainer.appendChild(link);
   });
 }
