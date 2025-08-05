@@ -40,34 +40,58 @@ function showGearsets(roleId) {
     return;
   }
 
+  let openGearset = null;
+
   role.gearsets.forEach((set, index) => {
     const gearsetDiv = document.createElement('div');
     gearsetDiv.className = 'gearset';
     gearsetDiv.setAttribute('data-index', index);
 
-    // Crée le titre et l'icône
+    // Titre + icône flèche
     const title = document.createElement('h3');
     title.textContent = set.title;
 
     const arrowIcon = document.createElement('span');
-    arrowIcon.textContent = '🡻'; // flèche vers le bas
+    arrowIcon.textContent = '🡻';
     title.appendChild(arrowIcon);
 
+    // Sous-titre + stats
+    const subtitle = document.createElement('p');
+    subtitle.textContent = set.subtitle || '';
+    subtitle.className = 'subtitle';
+
+    const stats = document.createElement('p');
+    stats.textContent = set.stats || '';
+    stats.className = 'stats';
+
+    // Armes
+    const weaponsDiv = document.createElement('div');
+    weaponsDiv.className = 'icon-row';
+    if (Array.isArray(set.weapons)) {
+      set.weapons.forEach(w => {
+        const item = document.createElement('div');
+        item.className = 'icon-label';
+        item.innerHTML = `<img src="${w.icon}" alt="${w.name}" /><span>${w.name}</span>`;
+        weaponsDiv.appendChild(item);
+      });
+    }
+
+    // Artefacts
+    const artifactsDiv = document.createElement('div');
+    artifactsDiv.className = 'icon-row';
+    if (Array.isArray(set.artifacts)) {
+      set.artifacts.forEach(a => {
+        const item = document.createElement('div');
+        item.className = 'icon-label';
+        item.innerHTML = `<img src="${a.icon}" alt="${a.name}" /><span>${a.name}</span>`;
+        artifactsDiv.appendChild(item);
+      });
+    }
+
+    // Image (conteneur caché avec animation)
     const imageContainer = document.createElement('div');
     imageContainer.className = 'gearset-image';
-    imageContainer.style.display = 'none';
 
-    gearsetDiv.addEventListener('click', () => {
-      const isVisible = imageContainer.style.display === 'block';
-      imageContainer.style.display = isVisible ? 'none' : 'block';
-      arrowIcon.textContent = isVisible ? '🡻' : '🡹'; // change l’icône
-    });
-
-    gearsetDiv.appendChild(title);
-    gearsetDiv.appendChild(imageContainer);
-    container.appendChild(gearsetDiv);
-
-    // Génère l’image (ne le fait qu'une fois)
     const link = document.createElement('a');
     link.href = set.link;
     link.target = '_blank';
@@ -78,5 +102,41 @@ function showGearsets(roleId) {
 
     link.appendChild(image);
     imageContainer.appendChild(link);
+
+    // Clic sur la carte → toggle unique
+    gearsetDiv.addEventListener('click', () => {
+      const isOpen = gearsetDiv.classList.contains('open');
+
+      // Ferme les autres
+      document.querySelectorAll('.gearset.open').forEach(other => {
+        if (other !== gearsetDiv) {
+          other.classList.remove('open');
+          const ic = other.querySelector('.gearset-image');
+          const arrow = other.querySelector('h3 span');
+          ic.style.maxHeight = null;
+          arrow.textContent = '🡻';
+        }
+      });
+
+      // Toggle ce gearset
+      if (isOpen) {
+        gearsetDiv.classList.remove('open');
+        imageContainer.style.maxHeight = null;
+        arrowIcon.textContent = '🡻';
+      } else {
+        gearsetDiv.classList.add('open');
+        imageContainer.style.maxHeight = image.scrollHeight + "px";
+        arrowIcon.textContent = '🡹';
+      }
+    });
+
+    gearsetDiv.appendChild(title);
+    gearsetDiv.appendChild(subtitle);
+    gearsetDiv.appendChild(stats);
+    gearsetDiv.appendChild(weaponsDiv);
+    gearsetDiv.appendChild(artifactsDiv);
+    gearsetDiv.appendChild(imageContainer);
+    container.appendChild(gearsetDiv);
   });
 }
+
