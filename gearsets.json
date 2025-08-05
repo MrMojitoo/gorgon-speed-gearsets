@@ -40,8 +40,8 @@
           "image": "images/BB_Burna_Trash.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/96kqxcxf3ym1q9z6",
           "weapons": [
-            { "icon": "icons/blunderbuss.png", "name": "BB" },
-            { "icon": "icons/firestaff.png", "name": "FS" }
+            { "icon": "icons/blunderbuss.webp", "name": "BB" },
+            { "icon": "icons/firestaff.webp", "name": "FS" }
           ],
           "artifacts": [
             { "icon": "icons/oldcrown.png", "name": "Old Crown" },
@@ -70,6 +70,7 @@
     }
   ]
 }
+
 
 
 
