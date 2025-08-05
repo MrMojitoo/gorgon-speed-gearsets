@@ -113,11 +113,15 @@ h1 {
   transition: opacity 0.2s ease;
 }
 
-.gearset-image {
-  width: 100%;
-  text-align: center;
-}
 
+/* Image toggle animée */
+.gearset-image {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  width: 100%;
+  margin-top: 10px;
+}
 
 /* Zoom optionnel au hover */
 .gearset img:hover {
@@ -131,3 +135,33 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.subtitle, .stats {
+  margin: 5px 0;
+  color: #bbbbbb;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #dddddd;
+}
+
+.icon-label img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
