@@ -7,9 +7,20 @@
       "gearsets": [
         {
           "title": "Tank Set #1",
+          "subtitle": "Heavy Armor - PvE Boss",
+          "stats": "250/250/150/250/5",
           "image": "images/tank1.png",
-          "link": "https://example.com/tank1"
-        },
+          "link": "https://example.com/tank1",
+          "weapons": [
+            { "icon": "icons/hammer.png", "name": "Great Hammer" },
+            { "icon": "icons/sword.png", "name": "Sword" }
+          ],
+          "artifacts": [
+            { "icon": "icons/artifact-armor.png", "name": "Stonewall Chest" },
+            { "icon": "icons/artifact-weapon.png", "name": "Void Cleaver" },
+            { "icon": "icons/artifact-jewellery.png", "name": "Amulet of Resilience" }
+          ]
+        }
         {
           "title": "Tank Set #2",
           "image": "images/tank2.png",
@@ -31,3 +42,4 @@
     }
   ]
 }
+
