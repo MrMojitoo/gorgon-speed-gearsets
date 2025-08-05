@@ -64,29 +64,28 @@ function showGearsets(roleId) {
     stats.textContent = set.stats || '';
     stats.className = 'stats';
 
-    // Armes
-    const weaponsDiv = document.createElement('div');
-    weaponsDiv.className = 'icon-row';
-    if (Array.isArray(set.weapons)) {
-      set.weapons.forEach(w => {
-        const item = document.createElement('div');
-        item.className = 'icon-label';
-        item.innerHTML = `<img src="${w.icon}" alt="${w.name}" /><span>${w.name}</span>`;
-        weaponsDiv.appendChild(item);
-      });
-    }
+    // Ligne avec 4 objets : weapon1, weapon2, artifactArmor, artifactJewellery
+    const iconRow = document.createElement('div');
+    iconRow.className = 'icon-row';
 
-    // Artefacts
-    const artifactsDiv = document.createElement('div');
-    artifactsDiv.className = 'icon-row';
-    if (Array.isArray(set.artifacts)) {
-      set.artifacts.forEach(a => {
-        const item = document.createElement('div');
-        item.className = 'icon-label';
-        item.innerHTML = `<img src="${a.icon}" alt="${a.name}" /><span>${a.name}</span>`;
-        artifactsDiv.appendChild(item);
-      });
-    }
+    const gearItems = [
+      set.weapon1,
+      set.weapon2,
+      set.artifactArmor,
+      set.artifactJewellery
+    ];
+
+    gearItems.forEach(item => {
+      if (item) {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'icon-label';
+        itemDiv.innerHTML = `
+          <img src="${item.icon}" alt="${item.name}" />
+          <span>${item.name}</span>
+        `;
+        iconRow.appendChild(itemDiv);
+      }
+    });
 
     // Image (conteneur caché avec animation)
     const imageContainer = document.createElement('div');
@@ -133,10 +132,8 @@ function showGearsets(roleId) {
     gearsetDiv.appendChild(title);
     gearsetDiv.appendChild(subtitle);
     gearsetDiv.appendChild(stats);
-    gearsetDiv.appendChild(weaponsDiv);
-    gearsetDiv.appendChild(artifactsDiv);
+    gearsetDiv.appendChild(iconRow); // Nouvelle ligne ici
     gearsetDiv.appendChild(imageContainer);
     container.appendChild(gearsetDiv);
   });
 }
-
