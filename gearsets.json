@@ -29,6 +29,34 @@
       ]
     },
     {
+      "id": "mage",
+      "name": "Mage",
+      "icon": "icons/2Mage.png",
+      "gearsets": [
+        {
+          "title": "BB/Burna",
+          "subtitle": "Trash Set",
+          "stats": "250/250/150/250/5",
+          "image": "images/BB_Burna_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/96kqxcxf3ym1q9z6",
+          "weapons": [
+            { "icon": "icons/blunderbuss.png", "name": "BB" },
+            { "icon": "icons/firestaff.png", "name": "FS" }
+          ],
+          "artifacts": [
+            { "icon": "icons/oldcrown.png", "name": "Old Crown" },
+            { "icon": "icons/burnanator.png", "name": "Burnanator" },
+            { "icon": "icons/endlessthirst.png", "name": "Endless Thirst" }
+          ]
+        },
+        {
+          "title": "Tank Set #2",
+          "image": "images/tank2.png",
+          "link": "https://example.com/tank2"
+        }
+      ]
+    },
+    {
       "id": "VGhealer",
       "name": "VG Healer",
       "icon": "icons/5VG.png",
@@ -42,5 +70,6 @@
     }
   ]
 }
+
 
 
