@@ -160,10 +160,13 @@ h1 {
   color: #dddddd;
 }
 
-.icon-label img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 5px;
+.icon-label img,
+.spell-icon {
+  width: 64px;              /* taille réelle réduite dans le fond */
+  height: 64px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
 }
 
 /* Transition de rotation de la flèche */
@@ -195,13 +198,6 @@ h1 {
 .spell-group {
   display: flex;
   gap: 10px;
-}
-
-.spell-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
-  border: 1px solid #444;
 }
 
 /* Quand la carte est ouverte, l'image devient visible */
@@ -242,4 +238,15 @@ h1 {
   height: 28px;
 }
 
-
+.icon-background {
+  width: 80px;
+  height: 80px;
+  background-color: #333;   /* fallback si pas défini dans JSON */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
