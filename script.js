@@ -78,13 +78,28 @@ function showGearsets(roleId) {
       if (item) {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'icon-label';
-        itemDiv.innerHTML = `
-          <img src="${item.icon}" alt="${item.name}" />
-          <span>${item.name}</span>
-        `;
+    
+        const iconWrapper = document.createElement('div');
+        iconWrapper.className = 'icon-wrapper';
+        if (item.bgColor) {
+          iconWrapper.style.backgroundColor = item.bgColor;
+        }
+    
+        const img = document.createElement('img');
+        img.src = item.icon;
+        img.alt = item.name;
+    
+        iconWrapper.appendChild(img);
+    
+        const label = document.createElement('span');
+        label.textContent = item.name;
+    
+        itemDiv.appendChild(iconWrapper);
+        itemDiv.appendChild(label);
         iconRow.appendChild(itemDiv);
       }
     });
+
 
     // Sorts des deux armes
     const spellRow = document.createElement('div');
@@ -95,13 +110,22 @@ function showGearsets(roleId) {
         const spellGroup = document.createElement('div');
         spellGroup.className = 'spell-group';
 
-        weapon.spells.forEach(icon => {
+        weapon.spells.forEach(spell => {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'spell-wrapper';
+          if (spell.bgColor) {
+            wrapper.style.backgroundColor = spell.bgColor;
+          }
+        
           const img = document.createElement('img');
-          img.src = icon;
+          img.src = spell.icon;
           img.alt = 'spell';
           img.className = 'spell-icon';
-          spellGroup.appendChild(img);
+        
+          wrapper.appendChild(img);
+          spellGroup.appendChild(wrapper);
         });
+
 
         spellRow.appendChild(spellGroup);
       }
