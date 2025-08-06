@@ -119,6 +119,35 @@
           },
           "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
           "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "BB/Burna Medusa",
+          "subtitle": "Changing Amulet only",
+          "stats": "304/25/350/25/16",
+          "image": "images/BB_Burna_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/zc_vuj0hdtnnh2_8",
+          "weapon1": { 
+            "icon": "items/dunebornhollow.png", 
+            "name": "Duneborn Hollow",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/grenade.png", "bgColor": "darkred" },
+              { "icon": "spells/azothshrapnelblast.png", "bgColor": "darkred" },
+              { "icon": "spells/netshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/burnanator.png", 
+            "name": "Burnanator" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/meteorshower.png", "bgColor": "darkred" },
+              { "icon": "spells/fireball.png", "bgColor": "darkred" },
+              { "icon": "spells/pillar.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
         }
       ]
     },
@@ -136,6 +165,7 @@
     }
   ]
 }
+
 
 
 
