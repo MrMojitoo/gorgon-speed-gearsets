@@ -110,7 +110,7 @@ h1 {
   height: auto;
   margin-top: 10px;
   border-radius: 8px;
-  border: 2px solid #3f51b5;
+  border: 1px solid #222;
   transition: opacity 0.2s ease;
 }
 
@@ -122,12 +122,6 @@ h1 {
   transition: max-height 0.4s ease;
   width: 100%;
   margin-top: 10px;
-}
-
-/* Zoom optionnel au hover */
-.gearset img:hover {
-  opacity: 0.95;
-  transform: scale(1.01);
 }
 
 /* Responsive sur petit écran : 1 colonne */
