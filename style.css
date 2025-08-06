@@ -105,7 +105,7 @@ h1 {
 
 
 /* Image cachée au début, visible au clic */
-.gearset img {
+.gearset-image img {
   max-width: 100%;
   height: auto;
   margin-top: 10px;
