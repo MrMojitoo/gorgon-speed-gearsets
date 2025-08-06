@@ -42,23 +42,25 @@
           "weapon1": { 
             "icon": "icons/dunebornhollow.webp", 
             "name": "Duneborn Hollow",
+            "bgColor": "orange",
             "spells": [
-              "spells/grenade.png",
-              "spells/azothshrapnelblast.png",
-              "spells/netshot.png"
+              { "spells/grenade.png", "bgColor": "red" },
+              { "spells/azothshrapnelblast.png", "bgColor": "red" },
+              { "spells/netshot.png", "bgColor": "red" }
             ]
           },
           "weapon2": { 
             "icon": "icons/burnanator.webp", 
             "name": "Burnanator" ,
+            "bgColor": "red",
             "spells": [
-              "spells/meteorshower.png",
-              "spells/fireball.png",
-              "spells/pillar.png"
+              { "spells/meteorshower.png", "bgColor": "red" },
+              { "spells/fireball.png", "bgColor": "red" },
+              { "spells/pillar.png", "bgColor": "red" }
             ]
           },
-          "artifactArmor": { "icon": "icons/oldcrown.png", "name": "Old Crown" },
-          "artifactJewellery": { "icon": "icons/endlessthirst.png", "name": "Endless Thirst" }
+          "artifactArmor": { "icon": "icons/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
+          "artifactJewellery": { "icon": "icons/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red }
         },
         {
           "title": "BB/Burna Echidna",
@@ -130,6 +132,7 @@
     }
   ]
 }
+
 
 
 
