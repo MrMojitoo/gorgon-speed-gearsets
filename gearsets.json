@@ -119,7 +119,7 @@
           },
           "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
           "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
-        },
+        }
       ]
     },
     {
@@ -136,6 +136,7 @@
     }
   ]
 }
+
 
 
 
