@@ -194,11 +194,6 @@ h1 {
   gap: 10px;
 }
 
-/* Quand la carte est ouverte, l'image devient visible */
-.gearset.open .gearset-image {
-  max-height: 1000px; /* valeur suffisante pour toutes les tailles d'image */
-}
-
 /* Pour les icônes d'items (armes/artéfacts) */
 .icon-wrapper {
   width: 48px;
@@ -212,8 +207,8 @@ h1 {
 }
 
 .icon-wrapper img {
-  width: 32px;
-  height: 32px;
+  width: 90%;
+  height: 90%;
 }
 
 /* Pour les icônes de spells */
@@ -228,8 +223,8 @@ h1 {
 }
 
 .spell-wrapper img.spell-icon {
-  width: 28px;
-  height: 28px;
+  width: 90%;
+  height: 90%;
 }
 
 .icon-background {
