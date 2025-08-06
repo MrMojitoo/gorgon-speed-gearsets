@@ -208,3 +208,38 @@ h1 {
 .gearset.open .gearset-image {
   max-height: 1000px; /* valeur suffisante pour toutes les tailles d'image */
 }
+
+/* Pour les icônes d'items (armes/artéfacts) */
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #333; /* défaut si aucune couleur dans le JSON */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.icon-wrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Pour les icônes de spells */
+.spell-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #444; /* défaut si aucune couleur dans le JSON */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.spell-wrapper img.spell-icon {
+  width: 28px;
+  height: 28px;
+}
+
+
