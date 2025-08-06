@@ -23,8 +23,18 @@ function createRoleButtons() {
     button.append(role.name);
 
     button.addEventListener('click', () => {
+      // Retirer la classe selected de tous les boutons
+      document.querySelectorAll('#roles button').forEach(btn => {
+        btn.classList.remove('selected');
+      });
+    
+      // Ajouter la classe selected au bouton cliqué
+      button.classList.add('selected');
+    
+      // Afficher les gearsets
       showGearsets(role.id);
     });
+
 
     rolesDiv.appendChild(button);
   });
