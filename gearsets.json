@@ -40,27 +40,27 @@
           "image": "images/BB_Burna_Trash.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/96kqxcxf3ym1q9z6",
           "weapon1": { 
-            "icon": "icons/dunebornhollow.webp", 
+            "icon": "items/dunebornhollow.webp", 
             "name": "Duneborn Hollow",
             "bgColor": "orange",
             "spells": [
-              { "spells/grenade.png", "bgColor": "red" },
-              { "spells/azothshrapnelblast.png", "bgColor": "red" },
-              { "spells/netshot.png", "bgColor": "red" }
+              { "icon": "spells/grenade.png", "bgColor": "red" },
+              { "icon": "spells/azothshrapnelblast.png", "bgColor": "red" },
+              { "icon": "spells/netshot.png", "bgColor": "red" }
             ]
           },
           "weapon2": { 
-            "icon": "icons/burnanator.webp", 
+            "icon": "items/burnanator.webp", 
             "name": "Burnanator" ,
             "bgColor": "red",
             "spells": [
-              { "spells/meteorshower.png", "bgColor": "red" },
-              { "spells/fireball.png", "bgColor": "red" },
-              { "spells/pillar.png", "bgColor": "red" }
+              { "icon": "spells/meteorshower.png", "bgColor": "red" },
+              { "icon": "spells/fireball.png", "bgColor": "red" },
+              { "icon": "spells/pillar.png", "bgColor": "red" }
             ]
           },
-          "artifactArmor": { "icon": "icons/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
-          "artifactJewellery": { "icon": "icons/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red }
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red }
         },
         {
           "title": "BB/Burna Echidna",
@@ -132,6 +132,7 @@
     }
   ]
 }
+
 
 
 
