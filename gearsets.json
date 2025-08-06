@@ -60,7 +60,7 @@
             ]
           },
           "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
-          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red }
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red" }
         },
         {
           "title": "BB/Burna Echidna",
@@ -132,6 +132,7 @@
     }
   ]
 }
+
 
 
 
