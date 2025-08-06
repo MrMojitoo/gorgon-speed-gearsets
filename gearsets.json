@@ -95,7 +95,7 @@
           "title": "BB/Inferno Typhon",
           "subtitle": "Changing Amulet and FS and gloves (only use Meteor)",
           "stats": "304/25/350/25/16",
-          "image": "images/BB_Burna_Typhon.png",
+          "image": "images/BB_Inferno_Typhon.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/qpaldow_3rvb67vj",
           "weapon1": { 
             "icon": "items/dunebornhollow.png", 
@@ -165,6 +165,7 @@
     }
   ]
 }
+
 
 
 
