@@ -40,7 +40,7 @@
           "image": "images/BB_Burna_Trash.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/96kqxcxf3ym1q9z6",
           "weapon1": { 
-            "icon": "items/dunebornhollow.webp", 
+            "icon": "items/dunebornhollow.png", 
             "name": "Duneborn Hollow",
             "bgColor": "orange",
             "spells": [
@@ -50,7 +50,7 @@
             ]
           },
           "weapon2": { 
-            "icon": "items/burnanator.webp", 
+            "icon": "items/burnanator.png", 
             "name": "Burnanator" ,
             "bgColor": "red",
             "spells": [
@@ -69,7 +69,7 @@
           "image": "images/BB_Burna_Echidna.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/9va11zokk4reo7n7",
           "weapon1": { 
-            "icon": "icons/dunebornhollow.webp", 
+            "icon": "icons/dunebornhollow.png", 
             "name": "Duneborn Hollow",
             "spells": [
               "spells/grenade.png",
@@ -78,7 +78,7 @@
             ]
           },
           "weapon2": { 
-            "icon": "icons/burnanator.webp", 
+            "icon": "icons/burnanator.png", 
             "name": "Burnanator" ,
             "spells": [
               "spells/meteorshower.png",
@@ -96,7 +96,7 @@
           "image": "images/BB_Burna_Typhon.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/qpaldow_3rvb67vj",
           "weapon1": { 
-            "icon": "icons/dunebornhollow.webp", 
+            "icon": "icons/dunebornhollow.png", 
             "name": "Duneborn Hollow",
             "spells": [
               "spells/grenade.png",
@@ -105,7 +105,7 @@
             ]
           },
           "weapon2": { 
-            "icon": "icons/inferno.webp", 
+            "icon": "icons/inferno.png", 
             "name": "Inferno" ,
             "spells": [
               "spells/meteorshower.png",
@@ -132,6 +132,7 @@
     }
   ]
 }
+
 
 
 
