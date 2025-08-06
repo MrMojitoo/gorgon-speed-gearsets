@@ -42,25 +42,25 @@
           "weapon1": { 
             "icon": "items/dunebornhollow.png", 
             "name": "Duneborn Hollow",
-            "bgColor": "orange",
+            "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/grenade.png", "bgColor": "red" },
-              { "icon": "spells/azothshrapnelblast.png", "bgColor": "red" },
-              { "icon": "spells/netshot.png", "bgColor": "red" }
+              { "icon": "spells/grenade.png", "bgColor": "darkred" },
+              { "icon": "spells/azothshrapnelblast.png", "bgColor": "darkred" },
+              { "icon": "spells/netshot.png", "bgColor": "darkred" }
             ]
           },
           "weapon2": { 
             "icon": "items/burnanator.png", 
             "name": "Burnanator" ,
-            "bgColor": "red",
+            "bgColor": "darkred",
             "spells": [
-              { "icon": "spells/meteorshower.png", "bgColor": "red" },
-              { "icon": "spells/fireball.png", "bgColor": "red" },
-              { "icon": "spells/pillar.png", "bgColor": "red" }
+              { "icon": "spells/meteorshower.png", "bgColor": "darkred" },
+              { "icon": "spells/fireball.png", "bgColor": "darkred" },
+              { "icon": "spells/pillar.png", "bgColor": "darkred" }
             ]
           },
-          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
-          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red" }
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
         },
         {
           "title": "BB/Burna Echidna",
@@ -71,25 +71,25 @@
           "weapon1": { 
             "icon": "items/dunebornhollow.png", 
             "name": "Duneborn Hollow",
-            "bgColor": "orange",
+            "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/grenade.png", "bgColor": "red" },
-              { "icon": "spells/azothshrapnelblast.png", "bgColor": "red" },
-              { "icon": "spells/netshot.png", "bgColor": "red" }
+              { "icon": "spells/grenade.png", "bgColor": "darkred" },
+              { "icon": "spells/azothshrapnelblast.png", "bgColor": "darkred" },
+              { "icon": "spells/netshot.png", "bgColor": "darkred" }
             ]
           },
           "weapon2": { 
             "icon": "items/burnanator.png", 
             "name": "Burnanator" ,
-            "bgColor": "red",
+            "bgColor": "darkred",
             "spells": [
-              { "icon": "spells/meteorshower.png", "bgColor": "red" },
-              { "icon": "spells/fireball.png", "bgColor": "red" },
-              { "icon": "spells/pillar.png", "bgColor": "red" }
+              { "icon": "spells/meteorshower.png", "bgColor": "darkred" },
+              { "icon": "spells/fireball.png", "bgColor": "darkred" },
+              { "icon": "spells/pillar.png", "bgColor": "darkred" }
             ]
           },
-          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
-          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red" }
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
         },
         {
           "title": "BB/Inferno Typhon",
@@ -100,25 +100,25 @@
           "weapon1": { 
             "icon": "items/dunebornhollow.png", 
             "name": "Duneborn Hollow",
-            "bgColor": "orange",
+            "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/grenade.png", "bgColor": "red" },
-              { "icon": "spells/azothshrapnelblast.png", "bgColor": "red" },
-              { "icon": "spells/netshot.png", "bgColor": "red" }
+              { "icon": "spells/grenade.png", "bgColor": "darkred" },
+              { "icon": "spells/azothshrapnelblast.png", "bgColor": "darkred" },
+              { "icon": "spells/netshot.png", "bgColor": "darkred" }
             ]
           },
           "weapon2": { 
             "icon": "items/inferno.png", 
             "name": "Inferno" ,
-            "bgColor": "red",
+            "bgColor": "darkred",
             "spells": [
-              { "icon": "spells/meteorshower.png", "bgColor": "red" },
-              { "icon": "spells/fireball.png", "bgColor": "red" },
-              { "icon": "spells/pillar.png", "bgColor": "red" }
+              { "icon": "spells/meteorshower.png", "bgColor": "darkred" },
+              { "icon": "spells/fireball.png", "bgColor": "darkred" },
+              { "icon": "spells/pillar.png", "bgColor": "darkred" }
             ]
           },
-          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "red" },
-          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "red" }
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
         },
       ]
     },
@@ -136,6 +136,7 @@
     }
   ]
 }
+
 
 
 
