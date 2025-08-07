@@ -177,9 +177,9 @@
             "name": "Heceta" ,
             "bgColor": "darkred",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/attunedleatherpants.png", "name": "Attuned Leather Pants", "bgColor": "darkred" },
@@ -197,7 +197,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/voidblade.png", "bgColor": "darkred" },
-              { "icon": "spells/essencerupture.png", "bgColor": "darkgreen" },
+              { "icon": "spells/essencerupture.png", "bgColor": "seagreen" },
               { "icon": "spells/oblivion.png", "bgColor": "darkred" }
             ]
           },
@@ -206,9 +206,9 @@
             "name": "Duneborn Illicium" ,
             "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/attunedleatherpants.png", "name": "Attuned Leather Pants", "bgColor": "darkred" },
@@ -226,7 +226,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/voidblade.png", "bgColor": "darkred" },
-              { "icon": "spells/essencerupture.png", "bgColor": "darkgreen" },
+              { "icon": "spells/essencerupture.png", "bgColor": "seagreen" },
               { "icon": "spells/oblivion.png", "bgColor": "darkred" }
             ]
           },
@@ -235,9 +235,9 @@
             "name": "Duneborn Illicium" ,
             "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/attunedleatherpants.png", "name": "Attuned Leather Pants", "bgColor": "darkred" },
@@ -255,7 +255,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/voidblade.png", "bgColor": "darkred" },
-              { "icon": "spells/essencerupture.png", "bgColor": "darkgreen" },
+              { "icon": "spells/essencerupture.png", "bgColor": "seagreen" },
               { "icon": "spells/oblivion.png", "bgColor": "darkred" }
             ]
           },
@@ -264,9 +264,9 @@
             "name": "Duneborn Illicium" ,
             "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/attunedleatherpants.png", "name": "Attuned Leather Pants", "bgColor": "darkred" },
@@ -291,7 +291,7 @@
             "bgColor": "darkred",
             "spells": [
               { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkblue" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
               { "icon": "spells/vortex.png", "bgColor": "darkred" }
             ]
           },
@@ -300,9 +300,9 @@
             "name": "Duneborn Illicium" ,
             "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
@@ -320,7 +320,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkblue" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
               { "icon": "spells/vortex.png", "bgColor": "darkred" }
             ]
           },
@@ -347,7 +347,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkblue" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
               { "icon": "spells/vortex.png", "bgColor": "darkred" }
             ]
           },
@@ -383,9 +383,9 @@
             "name": "Hoplite Life Staff" ,
             "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
@@ -403,7 +403,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkblue" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
               { "icon": "spells/vortex.png", "bgColor": "darkred" }
             ]
           },
@@ -412,9 +412,9 @@
             "name": "Heceta" ,
             "bgColor": "darkred",
             "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "darkgreen" },
-              { "icon": "spells/beacon.png", "bgColor": "darkgreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "darkgreen" }
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
             ]
           },
           "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
