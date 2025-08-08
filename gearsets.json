@@ -478,8 +478,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/skewer.png", "bgColor": "darkred" },
-              { "icon": "spells/perforate.png", "bgColor": "darkred" },
-              { "icon": "spells/sweep.png", "bgColor": "darkred" }
+              { "icon": "spells/perforate.png", "bgColor": "darkred" }
             ]
           },
           "artifactArmor": { "icon": "items/greyhat.png", "name": "Grey Wizard's Hat", "bgColor": "darkred" },
