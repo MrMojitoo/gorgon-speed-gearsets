@@ -275,154 +275,6 @@
       ]
     },
     {
-      "id": "flailhealer",
-      "name": "Flail Healer",
-      "icon": "icons/10Flail.png",
-      "gearsets": [
-        {
-          "title": "Flail/LS Trash",
-          "subtitle": "Trash Set",
-          "stats": "355/25/25/255/5",
-          "image": "images/Flail_LS_Trash.png",
-          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/lu4dzlochpa-npw9",
-          "weapon1": { 
-            "icon": "items/powerstone.png", 
-            "name": "Power Stone",
-            "bgColor": "darkred",
-            "spells": [
-              { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
-              { "icon": "spells/vortex.png", "bgColor": "darkred" }
-            ]
-          },
-          "weapon2": { 
-            "icon": "items/dunebornillicium.png", 
-            "name": "Duneborn Illicium" ,
-            "bgColor": "goldenrod",
-            "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
-              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
-            ]
-          },
-          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
-          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
-        },
-        {
-          "title": "Flail/BB Echidna",
-          "subtitle": "Switch Weapons/Gloves/Amulet",
-          "stats": "355/25/25/255/5",
-          "image": "images/Flail_BB_Echidna.png",
-          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/tx_v-j18jjsjf4xs",
-          "weapon1": { 
-            "icon": "items/gorgoniteflail.png", 
-            "name": "Crafted Flail",
-            "bgColor": "goldenrod",
-            "spells": [
-              { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
-              { "icon": "spells/vortex.png", "bgColor": "darkred" }
-            ]
-          },
-          "weapon2": { 
-            "icon": "items/pestilence.png", 
-            "name": "Pestilence" ,
-            "bgColor": "darkred",
-            "spells": [
-              { "icon": "spells/clawshot.png", "bgColor": "darkred" }
-            ]
-          },
-          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
-          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
-        },
-        {
-          "title": "Flail/BB Typhon",
-          "subtitle": "Switch Weapons/Gloves/Amulet",
-          "stats": "355/25/25/255/5",
-          "image": "images/Flail_BB_Typhon.png",
-          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/zaojtxpz92k1fdzy",
-          "weapon1": { 
-            "icon": "items/gorgoniteflail.png", 
-            "name": "Crafted Flail",
-            "bgColor": "goldenrod",
-            "spells": [
-              { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
-              { "icon": "spells/vortex.png", "bgColor": "darkred" }
-            ]
-          },
-          "weapon2": { 
-            "icon": "items/pestilence.png", 
-            "name": "Pestilence" ,
-            "bgColor": "darkred",
-            "spells": [
-              { "icon": "spells/clawshot.png", "bgColor": "darkred" }
-            ]
-          },
-          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
-          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
-        },
-        {
-          "title": "VG/LS Split",
-          "subtitle": "Change Weapons/Magnify/Hat/Pants/Shoes",
-          "stats": "25/25/355/255/5",
-          "image": "images/Flailer_VG_LS_Split.png",
-          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/fapo-t1vfwdz5m3v",
-          "weapon1": { 
-            "icon": "items/fracture.png", 
-            "name": "Fracture",
-            "bgColor": "darkred",
-            "spells": [
-              { "icon": "spells/voidblade.png", "bgColor": "darkred" },
-              { "icon": "spells/scream.png", "bgColor": "darkred" },
-              { "icon": "spells/oblivion.png", "bgColor": "darkred" }
-            ]
-          },
-          "weapon2": { 
-            "icon": "items/hoplitels.png", 
-            "name": "Hoplite Life Staff" ,
-            "bgColor": "goldenrod",
-            "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
-              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
-            ]
-          },
-          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
-          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
-        },
-        {
-          "title": "Flail/LS Medusa",
-          "subtitle": "Change Weapons/Magnify/Hat/Pants/Shoes/Amulet",
-          "stats": "355/25/25/255/5",
-          "image": "images/Flail_LS_Medusa.png",
-          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/l3psf480prqmxxk_",
-          "weapon1": { 
-            "icon": "items/gorgoniteflail.png", 
-            "name": "Crafted Flail",
-            "bgColor": "goldenrod",
-            "spells": [
-              { "icon": "spells/eruption.png", "bgColor": "darkred" },
-              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
-              { "icon": "spells/vortex.png", "bgColor": "darkred" }
-            ]
-          },
-          "weapon2": { 
-            "icon": "items/heceta.png", 
-            "name": "Heceta" ,
-            "bgColor": "darkred",
-            "spells": [
-              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
-              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
-              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
-            ]
-          },
-          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
-          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
-        }
-      ]
-    },
-    {
       "id": "sworder",
       "name": "Sworder",
       "icon": "icons/6Sword.png",
@@ -597,6 +449,154 @@
           },
           "artifactArmor": { "icon": "items/greyhat.png", "name": "Grey Wizard's Hat", "bgColor": "darkred" },
           "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
+    },
+    {
+      "id": "flailhealer",
+      "name": "Flail Healer",
+      "icon": "icons/10Flail.png",
+      "gearsets": [
+        {
+          "title": "Flail/LS Trash",
+          "subtitle": "Trash Set",
+          "stats": "355/25/25/255/5",
+          "image": "images/Flail_LS_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/lu4dzlochpa-npw9",
+          "weapon1": { 
+            "icon": "items/powerstone.png", 
+            "name": "Power Stone",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/eruption.png", "bgColor": "darkred" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
+              { "icon": "spells/vortex.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/dunebornillicium.png", 
+            "name": "Duneborn Illicium" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "Flail/BB Echidna",
+          "subtitle": "Switch Weapons/Gloves/Amulet",
+          "stats": "355/25/25/255/5",
+          "image": "images/Flail_BB_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/tx_v-j18jjsjf4xs",
+          "weapon1": { 
+            "icon": "items/gorgoniteflail.png", 
+            "name": "Crafted Flail",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/eruption.png", "bgColor": "darkred" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
+              { "icon": "spells/vortex.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/pestilence.png", 
+            "name": "Pestilence" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/clawshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "Flail/BB Typhon",
+          "subtitle": "Switch Weapons/Gloves/Amulet",
+          "stats": "355/25/25/255/5",
+          "image": "images/Flail_BB_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/zaojtxpz92k1fdzy",
+          "weapon1": { 
+            "icon": "items/gorgoniteflail.png", 
+            "name": "Crafted Flail",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/eruption.png", "bgColor": "darkred" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
+              { "icon": "spells/vortex.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/pestilence.png", 
+            "name": "Pestilence" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/clawshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "VG/LS Split",
+          "subtitle": "Change Weapons/Magnify/Hat/Pants/Shoes",
+          "stats": "25/25/355/255/5",
+          "image": "images/Flailer_VG_LS_Split.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/fapo-t1vfwdz5m3v",
+          "weapon1": { 
+            "icon": "items/fracture.png", 
+            "name": "Fracture",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/voidblade.png", "bgColor": "darkred" },
+              { "icon": "spells/scream.png", "bgColor": "darkred" },
+              { "icon": "spells/oblivion.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitels.png", 
+            "name": "Hoplite Life Staff" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "Flail/LS Medusa",
+          "subtitle": "Change Weapons/Magnify/Hat/Pants/Shoes/Amulet",
+          "stats": "355/25/25/255/5",
+          "image": "images/Flail_LS_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/l3psf480prqmxxk_",
+          "weapon1": { 
+            "icon": "items/gorgoniteflail.png", 
+            "name": "Crafted Flail",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/eruption.png", "bgColor": "darkred" },
+              { "icon": "spells/bludgeon.png", "bgColor": "darkcyan" },
+              { "icon": "spells/vortex.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/heceta.png", 
+            "name": "Heceta" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/orbofprotection.png", "bgColor": "seagreen" },
+              { "icon": "spells/beacon.png", "bgColor": "seagreen" },
+              { "icon": "spells/sacredground.png", "bgColor": "seagreen" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
         }
       ]
     }
