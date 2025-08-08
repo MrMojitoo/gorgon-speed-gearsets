@@ -421,6 +421,185 @@
           "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
         }
       ]
+    },
+    {
+      "id": "sworder",
+      "name": "Sworder",
+      "icon": "icons/6Sword.png",
+      "gearsets": [
+        {
+          "title": "SnS/Venom Trash",
+          "subtitle": "Trash Set",
+          "stats": "356/273/5/25/6",
+          "image": "images/SnS_Spear_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/09xt2ml6eckr6ndb",
+          "weapon1": { 
+            "icon": "items/gorgonitesns.png", 
+            "name": "Crafted Sword",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shieldrush.png", "bgColor": "darkcyan" },
+              { "icon": "spells/whirlingblade.png", "bgColor": "darkred" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/venom.png", 
+            "name": "Venom" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/perforate.png", "bgColor": "darkred" },
+              { "icon": "spells/sweep.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/creedboots.png", "name": "Creed Boots", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Butcher/Spear Echidna",
+          "subtitle": "Switch Amulet/Ring/Spell/Hat/Gloves/Shoes/Weapons/Shield",
+          "stats": "350/243/55/25/6",
+          "image": "images/SnS_Spear_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/--t3lzwmaa2be990",
+          "weapon1": { 
+            "icon": "items/butcher.png", 
+            "name": "The Butcher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/defendersresolve.png", "bgColor": "darkcyan" },
+              { "icon": "spells/whirlingblade.png", "bgColor": "darkred" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitespear.png", 
+            "name": "Hoplite Spear" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/perforate.png", "bgColor": "darkred" },
+              { "icon": "spells/sweep.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/greyhat.png", "name": "Grey Wizard's Hat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "SnS/Venom Scorpion",
+          "subtitle": "Switch Spell/Spear",
+          "stats": "356/273/5/25/6",
+          "image": "images/SnS_Spear_Scorpion.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/o0990mupj2qm2qq5",
+          "weapon1": { 
+            "icon": "items/gorgonitesns.png", 
+            "name": "Crafted Sword",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shieldrush.png", "bgColor": "darkcyan" },
+              { "icon": "spells/whirlingblade.png", "bgColor": "darkred" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/scorpionssting.png", 
+            "name": "Scorpion's Sting" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/jav.png", "bgColor": "darkred" },
+              { "icon": "spells/sweep.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/creedboots.png", "name": "Creed Boots", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Butcher/Spear Typhon",
+          "subtitle": "Switch Amulet/Ring/Spell/Hat/Gloves/Shoes/Weapons/Shield",
+          "stats": "350/243/55/25/6",
+          "image": "images/SnS_Spear_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/qxcl6v8w9i4okgks",
+          "weapon1": { 
+            "icon": "items/butcher.png", 
+            "name": "The Butcher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/defendersresolve.png", "bgColor": "darkcyan" },
+              { "icon": "spells/whirlingblade.png", "bgColor": "darkred" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitespear.png", 
+            "name": "Hoplite Spear" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/perforate.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/greyhat.png", "name": "Grey Wizard's Hat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Offtank GS/WH",
+          "subtitle": "Switch All and Magnify",
+          "stats": "134/201/55/25/6",
+          "image": "images/SnS_GS_WH_OT.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/1oyuxuekz3xu38ao",
+          "weapon1": { 
+            "icon": "items/grace.png", 
+            "name": "Grace",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/counter.png", "bgColor": "darkcyan" },
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/roaringrupture.png", "bgColor": "darkcyan" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/dunebornmaul.png", 
+            "name": "Duneborn Maul" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shockave.png", "bgColor": "darkred" },
+              { "icon": "spells/armorbreaker.png", "bgColor": "darkred" },
+              { "icon": "spells/clearout.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/voiddarkplate.png", "name": "Void Darkplate", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/justice.png", "name": "Justice", "bgColor": "darkred" }
+        },
+        {
+          "title": "Butcher/Spear Medusa",
+          "subtitle": "Switch Amulet/Ring/Spell/Hat/Gloves/Shoes/Weapons/Shield",
+          "stats": "350/243/55/25/6",
+          "image": "images/SnS_Spear_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/zajemp7dgdnm1pog",
+          "weapon1": { 
+            "icon": "items/butcher.png", 
+            "name": "The Butcher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/defendersresolve.png", "bgColor": "darkcyan" },
+              { "icon": "spells/whirlingblade.png", "bgColor": "darkred" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitespear.png", 
+            "name": "Hoplite Spear" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/perforate.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/greyhat.png", "name": "Grey Wizard's Hat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
     }
   ]
 }
