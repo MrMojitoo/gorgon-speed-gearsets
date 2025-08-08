@@ -563,7 +563,7 @@
             "name": "Duneborn Maul" ,
             "bgColor": "goldenrod",
             "spells": [
-              { "icon": "spells/shockave.png", "bgColor": "darkred" },
+              { "icon": "spells/shockwave.png", "bgColor": "darkred" },
               { "icon": "spells/armorbreaker.png", "bgColor": "darkred" },
               { "icon": "spells/clearout.png", "bgColor": "darkred" }
             ]
