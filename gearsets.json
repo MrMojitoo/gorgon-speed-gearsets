@@ -213,10 +213,10 @@
           "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
         },
         {
-          "title": "Evader/Inferno Typhon",
+          "title": "Evader/Aconite Typhon",
           "subtitle": "Change Amulet/Weapons/Heartrune",
           "stats": "5/380/250/25/5",
-          "image": "images/Evader_Inferno_Typhon.png",
+          "image": "images/Evader_Aconite_Typhon.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/4tarf8indy96cq4k",
           "weapon1": { 
             "icon": "items/gorgoniterapier.png", 
@@ -230,9 +230,10 @@
           },
           "weapon2": { 
             "icon": "items/inferno.png", 
-            "name": "Inferno" ,
+            "name": "Aconite" ,
             "bgColor": "darkred",
             "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" }
             ]
           },
           "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
@@ -332,10 +333,10 @@
           "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
         },
         {
-          "title": "Evader/Inferno Typhon",
+          "title": "Evader/Aconite Typhon",
           "subtitle": "Change Amulet/Weapons/Heartrune",
           "stats": "5/380/250/25/5",
-          "image": "images/Evader_Inferno_Typhon.png",
+          "image": "images/Evader_Aconite_Typhon.png",
           "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/4tarf8indy96cq4k",
           "weapon1": { 
             "icon": "items/gorgoniterapier.png", 
@@ -349,9 +350,10 @@
           },
           "weapon2": { 
             "icon": "items/inferno.png", 
-            "name": "Inferno" ,
+            "name": "Aconite" ,
             "bgColor": "darkred",
             "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" }
             ]
           },
           "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
