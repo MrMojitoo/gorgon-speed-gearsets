@@ -152,6 +152,243 @@
       ]
     },
     {
+      "id": "evaderga1",
+      "name": "Evader GA 1 Aconite",
+      "icon": "icons/3Evade1.png",
+      "gearsets": [
+        {
+          "title": "Evader/GA Trash",
+          "subtitle": "Trash Set",
+          "stats": "5/380/250/25/5",
+          "image": "images/Evader_GA_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/vp0tgcm7mkvnz6p0",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedga.png", 
+            "name": "Goldcursed Great Axe" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/gravitywell.png", "bgColor": "darkred" },
+              { "icon": "spells/maelstrom.png", "bgColor": "darkred" },
+              { "icon": "spells/reap.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Evader/Aconite Echidna",
+          "subtitle": "Change Amulet/Weapons/Heartrune",
+          "stats": "5/380/250/25/5",
+          "image": "images/Evader_Aconite_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/ayjm3k0ko887v_1q",
+          "weapon1": { 
+            "icon": "items/gorgoniterapier.png", 
+            "name": "Crafted Rapier",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/aconite.png", 
+            "name": "Aconite" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Evader/Inferno Typhon",
+          "subtitle": "Change Amulet/Weapons/Heartrune",
+          "stats": "5/380/250/25/5",
+          "image": "images/Evader_Inferno_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/4tarf8indy96cq4k",
+          "weapon1": { 
+            "icon": "items/gorgoniterapier.png", 
+            "name": "Crafted Rapier",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/inferno.png", 
+            "name": "Inferno" ,
+            "bgColor": "darkred",
+            "spells": [
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Evader/Aconite Medusa",
+          "subtitle": "Change Amulet/Weapons/Heartrune",
+          "stats": "5/380/250/25/5",
+          "image": "images/Evader_Aconite_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/9d2f3ycznhsiwmw3",
+          "weapon1": { 
+            "icon": "items/gorgoniterapier.png", 
+            "name": "Crafted Rapier",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/aconite.png", 
+            "name": "Aconite" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" },
+              { "icon": "spells/rapidshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
+    },
+    {
+      "id": "evaderga2",
+      "name": "Evader GA 2 Bow",
+      "icon": "icons/4Evade2.png",
+      "gearsets": [
+        {
+          "title": "Evader/GA Trash",
+          "subtitle": "Trash Set",
+          "stats": "5/380/250/25/5",
+          "image": "images/Evader_GA_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/vp0tgcm7mkvnz6p0",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedga.png", 
+            "name": "Goldcursed Great Axe" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/gravitywell.png", "bgColor": "darkred" },
+              { "icon": "spells/maelstrom.png", "bgColor": "darkred" },
+              { "icon": "spells/reap.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Finisher/Bow Echidna",
+          "subtitle": "Change Amulet/Weapon/Heartrune",
+          "stats": "5/380/250/25/5",
+          "image": "images/Finisher_Bow_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/w8twl6kmeqo2ikjn",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitebow.png", 
+            "name": "Hoplite Bow" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" },
+              { "icon": "spells/rainofarrows.png", "bgColor": "darkred" },
+              { "icon": "spells/explosiveshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Evader/Inferno Typhon",
+          "subtitle": "Change Amulet/Weapons/Heartrune",
+          "stats": "5/380/250/25/5",
+          "image": "images/Evader_Inferno_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/4tarf8indy96cq4k",
+          "weapon1": { 
+            "icon": "items/gorgoniterapier.png", 
+            "name": "Crafted Rapier",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/inferno.png", 
+            "name": "Inferno" ,
+            "bgColor": "darkred",
+            "spells": [
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Finisher/Bow Medusa",
+          "subtitle": "Change Amulet/Weapons/Heartrune",
+          "stats": "5/380/250/25/5",
+          "image": "images/Finisher_Bow_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/x1t1gc185rpw8a3e",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/riposte.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitebow.png", 
+            "name": "Hoplite Bow" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" },
+              { "icon": "spells/rainofarrows.png", "bgColor": "darkred" },
+              { "icon": "spells/explosiveshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
+    },
+    {
       "id": "vghealer",
       "name": "VG Healer",
       "icon": "icons/5VG.png",
