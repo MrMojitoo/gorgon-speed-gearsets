@@ -690,6 +690,129 @@
       ]
     },
     {
+      "id": "blood",
+      "name": "Blood",
+      "icon": "icons/7Blood.png",
+      "gearsets": [
+        {
+          "title": "Blood/IG Trash",
+          "subtitle": "Trash Set",
+          "stats": "5/350/280/25/5",
+          "image": "images/Blood_IG_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/d6iexurut9q-2gmm",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flourishandfinish.png", "bgColor": "darkred" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/dunebornicecrawler.png", 
+            "name": "Duneborn Ice Crawler" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/iceshower.png", "bgColor": "darkred" },
+              { "icon": "spells/windchill.png", "bgColor": "darkred" },
+              { "icon": "spells/icestorm.png", "bgColor": "darkcyan" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "Blood/Musket Echidna",
+          "subtitle": "Change Amulet/Weapon/Heartrune",
+          "stats": "5/356/274/25/5",
+          "image": "images/Blood_Musket_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/xiyu2pof0ikh7xqm",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flourishandfinish.png", "bgColor": "darkred" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitemusket.png", 
+            "name": "Hoplite Musket" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/powderburn.png", "bgColor": "darkred" },
+              { "icon": "spells/traps.png", "bgColor": "darkcyan" },
+              { "icon": "spells/stickybomb.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Blood/Musket Typhon",
+          "subtitle": "Change Amulet/Weapons/Heartrune",
+          "stats": "5/356/274/25/5",
+          "image": "images/Blood_Musket_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/qtn31x6no94fxix3",
+          "weapon1": { 
+            "icon": "items/gorgoniterapier.png", 
+            "name": "Finisher",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flourishandfinish.png", "bgColor": "darkred" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitemusket.png", 
+            "name": "Hoplite Musket" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/powderburn.png", "bgColor": "darkred" },
+              { "icon": "spells/traps.png", "bgColor": "darkcyan" },
+              { "icon": "spells/stickybomb.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Blood/Musket Medusa",
+          "subtitle": "Change Amulet/Weapons/Heartrune/Tree",
+          "stats": "5/356/274/25/5",
+          "image": "images/Blood_Musket_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/4hmhmb9k4ziad6_o",
+          "weapon1": { 
+            "icon": "items/finisher.png", 
+            "name": "Finisher",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/evade.png", "bgColor": "darkcyan" },
+              { "icon": "spells/flourishandfinish.png", "bgColor": "darkred" },
+              { "icon": "spells/flurry.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitemusket.png", 
+            "name": "Hoplite Musket" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/powderburn.png", "bgColor": "darkred" },
+              { "icon": "spells/traps.png", "bgColor": "darkcyan" },
+              { "icon": "spells/stickybomb.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
+    },
+    {
       "id": "flailhealer",
       "name": "Flail Healer",
       "icon": "icons/10Flail.png",
