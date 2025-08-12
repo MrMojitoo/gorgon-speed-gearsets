@@ -803,7 +803,7 @@
             "bgColor": "goldenrod",
             "spells": [
               { "icon": "spells/powderburn.png", "bgColor": "darkred" },
-              { "icon": "spells/traps.png", "bgColor": "darkcyan" },
+              { "icon": "spells/shootersstance.png", "bgColor": "darkred" },
               { "icon": "spells/stickybomb.png", "bgColor": "darkred" }
             ]
           },
