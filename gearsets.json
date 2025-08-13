@@ -60,7 +60,36 @@
             ]
           },
           "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
-          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "BB/DeepFreeze Balls and Split",
+          "subtitle": "Change FS to IG",
+          "stats": "304/25/350/25/16",
+          "image": "images/BB_DeepFreeze_Balls_and_Split.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/qxtmgja8jkkud2za",
+          "weapon1": { 
+            "icon": "items/dunebornhollow.png", 
+            "name": "Duneborn Hollow",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/grenade.png", "bgColor": "darkred" },
+              { "icon": "spells/azothshrapnelblast.png", "bgColor": "darkred" },
+              { "icon": "spells/netshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/deepfreeze.png", 
+            "name": "Deep Freeze" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/iceshower.png", "bgColor": "darkred" },
+              { "icon": "spells/windchill.png", "bgColor": "darkred" },
+              { "icon": "spells/icestorm.png", "bgColor": "darkcyan" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
         },
         {
           "title": "BB/Burna Echidna",
