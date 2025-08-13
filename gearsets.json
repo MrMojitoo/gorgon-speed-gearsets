@@ -387,6 +387,34 @@
           },
           "artifactArmor": { "icon": "items/nimblecoat.png", "name": "Nimble Coat", "bgColor": "darkred" },
           "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Bow/GS Medusa Cleanser",
+          "subtitle": "Change Everything",
+          "stats": "100/500/64/25/40",
+          "image": "images/Bow_GS_Medusa_Cleanser.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/yrmst56b8n5bs0pr",
+          "weapon1": { 
+            "icon": "items/hoplitebow.png", 
+            "name": "Hoplite Bow",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/poisonshot.png", "bgColor": "darkred" },
+              { "icon": "spells/rainofarrows.png", "bgColor": "darkred" },
+              { "icon": "spells/explosiveshot.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/crescentswave.png", 
+            "name": "Crescent's Wave",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/skywardslash.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/attunedleatherpants.png", "name": "Attuned Leather Pants", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
         }
       ]
     },
