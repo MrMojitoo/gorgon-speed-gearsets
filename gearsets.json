@@ -815,6 +815,245 @@
       ]
     },
     {
+      "id": "gsfreya",
+      "name": "GS Hatchet",
+      "icon": "icons/8BigPerf.png",
+      "gearsets": [
+        {
+          "title": "GS/Spear Trash",
+          "subtitle": "Trash Set",
+          "stats": "302/352/25/25/16",
+          "image": "images/GS_Spear_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/mqew48v3du0cdh4d",
+          "weapon1": { 
+            "icon": "items/crescentswave.png", 
+            "name": "Crescent's Wave",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/skywardslash.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitespear.png", 
+            "name": "Hoplite Spear" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/perforate.png", "bgColor": "darkred" },
+              { "icon": "spells/sweep.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "Hatchet/WH Echidna",
+          "subtitle": "Switch Amulet/Ring/Earring/Weapons/Gloves",
+          "stats": "302/352/25/25/16",
+          "image": "images/Hatchet_WH_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/wy_-m_ultg4l0hqg",
+          "weapon1": { 
+            "icon": "items/freyasfrancisca.png", 
+            "name": "Freya's Francisca",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedwh.png", 
+            "name": "Goldcursed War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shockwave.png", "bgColor": "darkred" },
+              { "icon": "spells/armorbreaker.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Hatchet/WH Typhon",
+          "subtitle": "Switch Amulet/Ring/Earring/Weapons/Gloves",
+          "stats": "302/352/25/25/16",
+          "image": "images/Hatchet_WH_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/3qsnqut9r1d3ss0q",
+          "weapon1": { 
+            "icon": "items/freyasfrancisca.png", 
+            "name": "Freya's Francisca",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedwh.png", 
+            "name": "Goldcursed War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shockwave.png", "bgColor": "darkred" },
+              { "icon": "spells/armorbreaker.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Hatchet/WH Medusa",
+          "subtitle": "Switch Amulet/Ring/Earring/Weapons/Gloves",
+          "stats": "302/352/25/25/16",
+          "image": "images/Hatchet_WH_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/0uynpy5vjl6hnek8",
+          "weapon1": { 
+            "icon": "items/freyasfrancisca.png", 
+            "name": "Freya's Francisca",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedwh.png", 
+            "name": "Goldcursed War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shockwave.png", "bgColor": "darkred" },
+              { "icon": "spells/armorbreaker.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
+    },
+    {
+      "id": "hatchetscorp",
+      "name": "Hatchet Scorpion",
+      "icon": "icons/9HatchetScorp.png",
+      "gearsets": [
+        {
+          "title": "Hatchet/Scorpion Trash",
+          "subtitle": "Trash Set",
+          "stats": "376/278/25/25/16",
+          "image": "images/Hatchet_Scorpion_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/_p-zcpnqktgctzy6",
+          "weapon1": { 
+            "icon": "items/gorgonitehatchet.png", 
+            "name": "Crafted Hatchet",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/scorpionssting.png", 
+            "name": "Scorpion's Sting" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/sweep.png", "bgColor": "darkred" },
+              { "icon": "spells/jav.png", "bgColor": "darkred" },
+              { "icon": "spells/vaultkick.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Hatchet/Venom Echidna",
+          "subtitle": "Switch Amulet/Ring/Shoes/Spear",
+          "stats": "304/350/25/25/16",
+          "image": "images/Hatchet_Venom_Echidna.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/khgl26kk6wiee-lp",
+          "weapon1": { 
+            "icon": "items/gorgonitehatchet.png", 
+            "name": "Crafted Hatchet",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedwh.png", 
+            "name": "Goldcursed War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/sweep.png", "bgColor": "darkred" },
+              { "icon": "spells/jav.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Hatchet/Venom Typhon",
+          "subtitle": "Switch Amulet/Ring/Shoes/Spear",
+          "stats": "304/350/25/25/16",
+          "image": "images/Hatchet_Venom_Typhon.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/n85do0nuo2mbiix3",
+          "weapon1": { 
+            "icon": "items/gorgonitehatchet.png", 
+            "name": "Crafted Hatchet",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedwh.png", 
+            "name": "Goldcursed War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/sweep.png", "bgColor": "darkred" },
+              { "icon": "spells/jav.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        },
+        {
+          "title": "Hatchet/Venom Medusa",
+          "subtitle": "Switch Amulet/Ring/Shoes/Spear",
+          "stats": "304/350/25/25/16",
+          "image": "images/Hatchet_Venom_Medusa.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/p_xff9rj_qaombo8",
+          "weapon1": { 
+            "icon": "items/gorgonitehatchet.png", 
+            "name": "Crafted Hatchet",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/goldcursedwh.png", 
+            "name": "Goldcursed War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/sweep.png", "bgColor": "darkred" },
+              { "icon": "spells/jav.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/endlessthirst.png", "name": "Endless Thirst", "bgColor": "darkred" }
+        }
+      ]
+    },
+    {
       "id": "flailhealer",
       "name": "Flail Healer",
       "icon": "icons/10Flail.png",
