@@ -905,6 +905,35 @@
           "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
         },
         {
+          "title": "Hatchet/Spear Small Trash",
+          "subtitle": "Change GS to Hatchet",
+          "stats": "302/352/25/25/16",
+          "image": "images/Hatchet_Spear_Small_Trash.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/pf85k3bqtujqiyny",
+          "weapon1": { 
+            "icon": "items/freyasfrancisca.png", 
+            "name": "Freya's Francisca",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/rendingthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/infectedthrow.png", "bgColor": "darkred" },
+              { "icon": "spells/torrent.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/hoplitespear.png", 
+            "name": "Hoplite Spear" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/skewer.png", "bgColor": "darkred" },
+              { "icon": "spells/perforate.png", "bgColor": "darkred" },
+              { "icon": "spells/sweep.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/oldcrown.png", "name": "Old Crown", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
           "title": "Hatchet/WH Echidna",
           "subtitle": "Switch Amulet/Ring/Earring/Weapons/Gloves",
           "stats": "302/352/25/25/16",
