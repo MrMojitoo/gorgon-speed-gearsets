@@ -6,25 +6,178 @@
       "icon": "icons/1tank.png",
       "gearsets": [
         {
-          "title": "Tank Set #1",
-          "subtitle": "Heavy Armor - PvE Boss",
-          "stats": "250/250/150/250/5",
-          "image": "images/tank1.png",
-          "link": "https://example.com/tank1",
-          "weapons": [
-            { "icon": "icons/hammer.png", "name": "Great Hammer" },
-            { "icon": "icons/sword.png", "name": "Sword" }
-          ],
-          "artifacts": [
-            { "icon": "icons/artifact-armor.png", "name": "Stonewall Chest" },
-            { "icon": "icons/artifact-weapon.png", "name": "Void Cleaver" },
-            { "icon": "icons/artifact-jewellery.png", "name": "Amulet of Resilience" }
-          ]
+          "title": "GS/WH Trash Tank",
+          "subtitle": "Trash Set",
+          "stats": "200/149/5/5/306",
+          "image": "images/GS_WH_Trash_Tank.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/141vsegvlx5dq0g5",
+          "weapon1": { 
+            "icon": "items/crescentswave.png", 
+            "name": "Crescent's Wave",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/counter.png", "bgColor": "darkcyan" },
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/roaringrupture.png", "bgColor": "darkcyan" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/gorgonitewh.png", 
+            "name": "Crafted War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shockwave.png", "bgColor": "darkred" },
+              { "icon": "spells/armorbreaker.png", "bgColor": "darkred" },
+              { "icon": "spells/clearout.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/voiddarkplate.png", "name": "Void Darkplate", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
         },
         {
-          "title": "Tank Set #2",
-          "image": "images/tank2.png",
-          "link": "https://example.com/tank2"
+          "title": "SnS/GS Echidna Light Tank",
+          "subtitle": "Switch Armor/Amulet/Weapon/Skill",
+          "stats": "206/149/5/5/300",
+          "image": "images/SnS_GS_Echidna_Light_Tank.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/jpg_fd2d7s4-h0pi",
+          "weapon1": { 
+            "icon": "items/hoplitesword.png", 
+            "name": "Hoplite Longsword",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shieldrush.png", "bgColor": "darkcyan" },
+              { "icon": "spells/defendersresolve.png", "bgColor": "darkcyan" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/duneborntusk.png", 
+            "name": "Duneborn Tusk" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/counter.png", "bgColor": "darkcyan" },
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/skywardslash.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/featherweight.png", "name": "Featherweight", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/blooddrinker.png", "name": "Blooddrinker", "bgColor": "darkred" }
+        },
+        {
+          "title": "Musket/WH Bath and Split Tank",
+          "subtitle": "Switch GS to Musket",
+          "stats": "200/149/5/5/306",
+          "image": "images/Musket_WH_Bath_and_Split_Tank.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/9z-massf-5rgxyyz",
+          "weapon1": { 
+            "icon": "items/themechanic.png", 
+            "name": "The Mechanic",
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/traps.png", "bgColor": "darkcyan" },
+              { "icon": "spells/stickybomb.png", "bgColor": "darkred" },
+              { "icon": "spells/powderburn.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/gorgonitewh.png", 
+            "name": "Crafted War Hammer" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shockwave.png", "bgColor": "darkred" },
+              { "icon": "spells/armorbreaker.png", "bgColor": "darkred" },
+              { "icon": "spells/clearout.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/voiddarkplate.png", "name": "Void Darkplate", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/elementalband.png", "name": "Elemental Band", "bgColor": "darkred" }
+        },
+        {
+          "title": "SnS/GS Typhon Light Tank",
+          "subtitle": "Switch Armor/Amulet/Weapon/Skill",
+          "stats": "206/149/5/5/300",
+          "image": "images/SnS_GS_Typhon_Light_Tank.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/2chp_whzwb6ei0au",
+          "weapon1": { 
+            "icon": "items/hoplitesword.png", 
+            "name": "Hoplite Longsword",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shieldrush.png", "bgColor": "darkcyan" },
+              { "icon": "spells/defendersresolve.png", "bgColor": "darkcyan" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/duneborntusk.png", 
+            "name": "Duneborn Tusk" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/counter.png", "bgColor": "darkcyan" },
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/skywardslash.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/featherweight.png", "name": "Featherweight", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/blooddrinker.png", "name": "Blooddrinker", "bgColor": "darkred" }
+        },
+        {
+          "title": "FS/GS Tank Skip",
+          "subtitle": "Switch Weapons and Chest and Jewelry",
+          "stats": "122/149/5/5/342",
+          "image": "images/FS_GS_Tank_Skip.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/mpmsqqyyj5_qu-qi",
+          "weapon1": { 
+            "icon": "items/gorgonitefs.png", 
+            "name": "Crafted FS",
+            "bgColor": "darkcyan",
+            "spells": [
+              { "icon": "spells/burnout.png", "bgColor": "darkred" },
+              { "icon": "spells/fireball.png", "bgColor": "darkred" },
+              { "icon": "spells/pillar.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/grace.png", 
+            "name": "Grace" ,
+            "bgColor": "darkred",
+            "spells": [
+              { "icon": "spells/counter.png", "bgColor": "darkcyan" },
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/skywardslash.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/survivorscoat.png", "name": "Survivor's Coat", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/blooddrinker.png", "name": "Blooddrinker", "bgColor": "darkred" }
+        },
+        {
+          "title": "SnS/GS Medusa Light Tank",
+          "subtitle": "Switch Armor/Amulet/Weapon/Skill",
+          "stats": "206/149/5/5/300",
+          "image": "images/SnS_GS_Medusa_Light_Tank.png",
+          "link": "https://www.nw-buddy.de/gearsets/6e5ixkle8g4psv5/3d1uy7u8-3p8d6qd",
+          "weapon1": { 
+            "icon": "items/hoplitesword.png", 
+            "name": "Hoplite Longsword",
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/shieldrush.png", "bgColor": "darkcyan" },
+              { "icon": "spells/defendersresolve.png", "bgColor": "darkcyan" },
+              { "icon": "spells/upheaval.png", "bgColor": "darkred" }
+            ]
+          },
+          "weapon2": { 
+            "icon": "items/duneborntusk.png", 
+            "name": "Duneborn Tusk" ,
+            "bgColor": "goldenrod",
+            "spells": [
+              { "icon": "spells/counter.png", "bgColor": "darkcyan" },
+              { "icon": "spells/relentlessrush.png", "bgColor": "darkred" },
+              { "icon": "spells/skywardslash.png", "bgColor": "darkred" }
+            ]
+          },
+          "artifactArmor": { "icon": "items/featherweight.png", "name": "Featherweight", "bgColor": "darkred" },
+          "artifactJewellery": { "icon": "items/blooddrinker.png", "name": "Blooddrinker", "bgColor": "darkred" }
         }
       ]
     },
