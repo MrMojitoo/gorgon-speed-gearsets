@@ -411,7 +411,7 @@
             ]
           },
           "weapon2": { 
-            "icon": "items/inferno.png", 
+            "icon": "items/aconite.png", 
             "name": "Aconite" ,
             "bgColor": "darkred",
             "spells": [
@@ -531,7 +531,7 @@
             ]
           },
           "weapon2": { 
-            "icon": "items/inferno.png", 
+            "icon": "items/aconite.png", 
             "name": "Aconite" ,
             "bgColor": "darkred",
             "spells": [
