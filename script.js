@@ -164,7 +164,6 @@ function showGearsets(roleId) {
     iframe.loading = 'lazy';
     iframe.referrerPolicy = 'no-referrer';
     iframe.setAttribute('allowfullscreen', '');
-    iframe.style.minHeight = '900px';
 
     scaleWrapper.appendChild(iframe);
     embedContainer.appendChild(scaleWrapper);
