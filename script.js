@@ -197,7 +197,7 @@ function showGearsets(roleId) {
     gearsetDiv.appendChild(stats);
     gearsetDiv.appendChild(iconRow);
     gearsetDiv.appendChild(spellRow); // nouvelle ligne des sorts
-    gearsetDiv.appendChild(imageContainer);
+    gearsetDiv.appendChild(embedContainer);
     container.appendChild(gearsetDiv);
   });
 }
