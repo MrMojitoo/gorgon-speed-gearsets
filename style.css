@@ -264,7 +264,7 @@ h1 {
 /* Quand la carte est ouverte */
 .gearset.open {
   grid-column: 1 / -1;               /* occupe toute la ligne de la grille */
-  width: min(92vw, 1800px);          /* ~90% largeur écran, avec un plafond confort */
+  width: 95vw;          /* ~90% largeur écran, avec un plafond confort */
   margin-left: auto;
   margin-right: auto;
   align-items: stretch; 
@@ -290,6 +290,6 @@ h1 {
   display: block;
   border: none;
   height: auto;
-  min-height: 1200px;
+  min-height: 3000px;
 }
 
