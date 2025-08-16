@@ -141,20 +141,37 @@ function showGearsets(roleId) {
       }
     });
 
-    // Conteneur d'image (affiché au clic)
-    const imageContainer = document.createElement('div');
-    imageContainer.className = 'gearset-image';
+    // === CONTENEUR EMBED (remplace l'image) ===
+    const embedContainer = document.createElement('div');
+    embedContainer.className = 'gearset-embed';
 
-    const link = document.createElement('a');
-    link.href = set.link;
-    link.target = '_blank';
+    // Construire l'URL d'embed
+    const embedSrc = (set.embed && set.embed.trim())
+      ? set.embed.trim()
+      : (set.link ? set.link.replace('/gearsets/', '/gearsets/embed/') : '');
 
-    const image = document.createElement('img');
-    image.src = set.image;
-    image.alt = set.title;
+    // Wrapper pour le scale
+    const scaleWrapper = document.createElement('div');
+    scaleWrapper.className = 'embed-scale';
 
-    link.appendChild(image);
-    imageContainer.appendChild(link);
+    // Ajustement par gearset (optionnel dans le JSON)
+    if (typeof set.scale === 'number') {
+      scaleWrapper.style.setProperty('--scale', String(set.scale));
+    }
+
+    const iframe = document.createElement('iframe');
+    iframe.src = embedSrc;
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'no-referrer';
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.style.minHeight = '900px';
+
+    scaleWrapper.appendChild(iframe);
+    embedContainer.appendChild(scaleWrapper);
+
+    // Ajout dans la carte
+    gearsetDiv.appendChild(embedContainer);
+
 
     // Gestion du clic sur toute la carte
     gearsetDiv.addEventListener('click', () => {

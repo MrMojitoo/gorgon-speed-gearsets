@@ -250,3 +250,39 @@ h1 {
 .gearset.open .gearset-image {
   max-height: 1400px; /* valeur suffisante pour toutes les tailles d'image */
 }
+
+/* Conteneur de l'embed */
+.gearset-embed {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  margin-top: 10px;
+  contain: content;
+}
+
+/* Quand la carte est ouverte */
+.gearset.open {
+  grid-column: 1 / -1;        /* occupe toute la largeur de la grille */
+  width: 100%;                /* prend 100% de la largeur dispo */
+}
+
+/* Embed ouvert = assez grand pour afficher le contenu */
+.gearset.open .gearset-embed {
+  max-height: 5000px;
+}
+
+/* Wrapper qui dézoome l'iframe */
+.embed-scale {
+  --scale: 0.9; /* valeur par défaut : 90% */
+  transform: scale(var(--scale));
+  transform-origin: top left;
+  width: calc(100% / var(--scale));
+}
+
+.embed-scale iframe {
+  width: 100%;
+  border: none;
+  display: block;
+  min-height: 900px; /* hauteur de départ */
+}
+
