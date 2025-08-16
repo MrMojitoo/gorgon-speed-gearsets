@@ -198,3 +198,17 @@ function showGearsets(roleId) {
     container.appendChild(gearsetDiv);
   });
 }
+
+// Ajuste la hauteur de l'iframe à son contenu
+window.addEventListener("message", (event) => {
+  // Vérifie que ça vient bien de nw-buddy
+  if (event.origin.includes("nw-buddy.de")) {
+    const { id, height } = event.data || {};
+    if (id && height) {
+      const iframe = document.querySelector(`iframe[src*="${id}"]`);
+      if (iframe) {
+        iframe.style.height = height + "px";
+      }
+    }
+  }
+});
