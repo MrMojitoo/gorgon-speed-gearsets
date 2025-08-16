@@ -194,15 +194,17 @@ function showGearsets(roleId) {
 
     // Mesure la hauteur VISUELLE (avec le scale) et sync le conteneur
     const syncEmbedHeight = () => {
-      // on force un reflow après les modifs de --scale
+      if (!gearsetDiv.classList.contains('open')) {
+        // carte fermée → s'assurer que l'embed est replié
+        embedContainer.style.maxHeight = '0';
+        return;
+      }
       requestAnimationFrame(() => {
-        const rect = scaleWrapper.getBoundingClientRect(); // tient compte du transform: scale()
-        // On borne à l'entier supérieur pour éviter les sous-pixels
-        const h = Math.ceil(rect.height);
-        // On cale la carte sur la hauteur visuelle de l'embed, sans crop
-        embedContainer.style.maxHeight = h + 'px';
+        const rect = scaleWrapper.getBoundingClientRect();
+        embedContainer.style.maxHeight = Math.ceil(rect.height) + 'px';
       });
     };
+
 
 
     // Fonctions de zoom
@@ -236,6 +238,7 @@ function showGearsets(roleId) {
       const isOpen = gearsetDiv.classList.contains('open');
       if (isOpen) {
         gearsetDiv.classList.remove('open');
+        embedContainer.style.maxHeight = '0';
       } else {
         gearsetDiv.classList.add('open');
 
@@ -270,8 +273,6 @@ function showGearsets(roleId) {
     gearsetDiv.appendChild(zoomControls);
     gearsetDiv.appendChild(embedContainer);
     container.appendChild(gearsetDiv);
-    container.appendChild(gearsetDiv);
-    syncEmbedHeight();
   });
 }
 
@@ -284,14 +285,17 @@ window.addEventListener("message", (event) => {
       const target = Array.from(document.querySelectorAll('iframe[src*="nw-buddy.de/gearsets/embed"]'))
         .find(ifr => ifr.contentWindow === event.source);
       if (target) {
-        target.dataset.originalHeight = String(height);
+        const card = target.closest('.gearset');
+        const embed = target.closest('.gearset-embed');
+        if (!card.classList.contains('open')) {
+          // Carte fermée → on replie et on ignore
+          if (embed) embed.style.maxHeight = '0';
+          return;
+        }
         target.style.height = height + "px";
 
-        // ↙️ remonte jusqu'à la carte et recale la hauteur visuelle du conteneur
         const wrapper = target.closest('.embed-scale');
-        const embed = target.closest('.gearset-embed');
         if (embed && wrapper) {
-          // mesure et calage après que l'iframe a posé sa nouvelle hauteur
           requestAnimationFrame(() => {
             const rect = wrapper.getBoundingClientRect();
             embed.style.maxHeight = Math.ceil(rect.height) + 'px';
