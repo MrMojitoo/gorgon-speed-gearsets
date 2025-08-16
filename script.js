@@ -169,7 +169,7 @@ function showGearsets(roleId) {
     embedContainer.appendChild(scaleWrapper);
 
     // Valeur de scale initiale (1 par défaut, ou set.scale si fourni dans le JSON)
-    let currentScale = (typeof set.scale === 'number' && set.scale > 0.4 && set.scale <= 2) ? set.scale : 1;
+    let currentScale = (typeof set.scale === 'number' && set.scale > 0.4 && set.scale <= 2) ? set.scale : 0.5;
     scaleWrapper.style.setProperty('--scale', String(currentScale));
 
     // --- Contrôles de zoom
