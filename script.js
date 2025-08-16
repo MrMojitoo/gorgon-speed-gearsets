@@ -158,14 +158,6 @@ function showGearsets(roleId) {
     if (typeof set.scale === 'number') {
       scaleWrapper.style.setProperty('--scale', String(set.scale));
     }
-
-    const iframe = document.createElement('iframe');
-    iframe.src = embedSrc;
-    iframe.loading = 'lazy';
-    iframe.referrerPolicy = 'no-referrer';
-    iframe.setAttribute('allowfullscreen', '');
-
-    scaleWrapper.appendChild(iframe);
     embedContainer.appendChild(scaleWrapper);
 
     // Valeur de scale initiale (1 par défaut, ou set.scale si fourni dans le JSON)
@@ -246,9 +238,21 @@ function showGearsets(roleId) {
         gearsetDiv.classList.remove('open');
       } else {
         gearsetDiv.classList.add('open');
+
+        // ⇩ Créer l’iframe seulement à l’ouverture
+        if (!scaleWrapper.querySelector('iframe')) {
+          const iframe = document.createElement('iframe');
+          iframe.src = embedSrc;
+          iframe.loading = 'lazy';
+          iframe.referrerPolicy = 'no-referrer';
+          iframe.setAttribute('allowfullscreen', '');
+          scaleWrapper.appendChild(iframe);
+        }
+
         syncEmbedHeight(); // recale à l'ouverture
       }
     });
+
 
 
     toggleButton.addEventListener('click', (e) => {
