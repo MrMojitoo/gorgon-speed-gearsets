@@ -205,6 +205,10 @@ function showGearsets(roleId) {
     const applyScale = () => {
       scaleWrapper.style.setProperty('--scale', String(currentScale));
       updateReadout();
+      const iframe = scaleWrapper.querySelector('iframe');
+      if (iframe && iframe.dataset.originalHeight) {
+        iframe.style.height = (parseFloat(iframe.dataset.originalHeight) * currentScale) + 'px';
+      }
       // Optionnel: si NW-Buddy renvoie des resize, on n'a rien d'autre à faire.
       // Sinon, on laisse l'espace vertical généreux (max-height déjà grand).
     };
@@ -252,10 +256,12 @@ window.addEventListener("message", (event) => {
   if (event.origin.includes("nw-buddy.de") && event.data?.type === "nw-buddy-resize") {
     const height = event.data.height;
     if (typeof height === "number") {
-      // Trouver toutes les iframes NW-Buddy actuellement ouvertes
       document.querySelectorAll('iframe[src*="nw-buddy.de/gearsets/embed"]').forEach((iframe) => {
-        // Applique la hauteur reçue
-        iframe.style.height = height + "px";
+        iframe.dataset.originalHeight = height;
+        // appliquer hauteur selon le scale courant
+        const wrapper = iframe.closest('.embed-scale');
+        const scale = parseFloat(wrapper.style.getPropertyValue('--scale')) || 1;
+        iframe.style.height = (height * scale) + "px";
       });
     }
   }
