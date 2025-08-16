@@ -74,7 +74,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* 2 colonnes si possible */
   gap: 30px;
   width: 100%;
-  max-width: 1400px;
+  max-width: 100%;
   padding: 0 20px;
 }
 
@@ -251,7 +251,7 @@ h1 {
   max-height: 1400px; /* valeur suffisante pour toutes les tailles d'image */
 }
 
-/* Conteneur de l'embed */
+/* Conteneur de l'embed, fermé par défaut (animable) */
 .gearset-embed {
   overflow: hidden;
   max-height: 0;
@@ -262,27 +262,31 @@ h1 {
 
 /* Quand la carte est ouverte */
 .gearset.open {
-  grid-column: 1 / -1;        /* occupe toute la largeur de la grille */
-  width: 100%;                /* prend 100% de la largeur dispo */
+  grid-column: 1 / -1;               /* occupe toute la ligne de la grille */
+  width: min(92vw, 1800px);          /* ~90% largeur écran, avec un plafond confort */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* Embed ouvert = assez grand pour afficher le contenu */
 .gearset.open .gearset-embed {
-  max-height: 5000px;
+  overflow: visible;         /* ← important pour éviter le crop */
+  max-height: 100000px;      /* ← grand pour couvrir tous les cas */
 }
 
 /* Wrapper qui dézoome l'iframe */
 .embed-scale {
-  --scale: 0.9; /* valeur par défaut : 90% */
+  --scale: 1;                /* ← commence à 1:1 pour ne pas compresser */
   transform: scale(var(--scale));
   transform-origin: top left;
-  width: calc(100% / var(--scale));
+  width: 100%;               /* ← pas de compensation de largeur */
 }
 
 .embed-scale iframe {
   width: 100%;
-  border: none;
   display: block;
-  min-height: 900px; /* hauteur de départ */
+  border: none;
+  height: auto;
+  min-height: 1200px;        /* un garde-fou de départ; ajuste si besoin */
 }
-
