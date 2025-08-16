@@ -200,24 +200,36 @@ function showGearsets(roleId) {
       b.addEventListener('click', (e) => e.stopPropagation());
     });
 
+    // Mesure la hauteur VISUELLE (avec le scale) et sync le conteneur
+    const syncEmbedHeight = () => {
+      // on force un reflow après les modifs de --scale
+      requestAnimationFrame(() => {
+        const rect = scaleWrapper.getBoundingClientRect(); // tient compte du transform: scale()
+        // On borne à l'entier supérieur pour éviter les sous-pixels
+        const h = Math.ceil(rect.height);
+        // On cale la carte sur la hauteur visuelle de l'embed, sans crop
+        embedContainer.style.maxHeight = h + 'px';
+      });
+    };
+
+
     // Fonctions de zoom
     const clamp = (v) => Math.min(2, Math.max(0.2, v)); // bornes 20% ↔ 200%
     const applyScale = () => {
       scaleWrapper.style.setProperty('--scale', String(currentScale));
       updateReadout();
 
-      const iframe = scaleWrapper.querySelector('iframe');
-      if (iframe) {
-        // 1) éviter tout crop en attendant le vrai resize de NW-Buddy
-        iframe.style.height = '100000px';
-
-        // 2) petit "poke" : certains embeds recalculent sur resize/message
-        try { iframe.contentWindow.postMessage({ type: 'parent-resized' }, '*'); } catch (e) {}
-        // Si l’embed ignore ce message, ce n’est pas grave : son propre ResizeObserver
-        // ou son listener 'resize' se déclenchera quand la largeur de l’iframe aura changé
-        // (elle change réellement car width = calc(100% / --scale)).
+      // Optionnel : donner temporairement une grande hauteur pour éviter tout crop
+      const iframeEl = scaleWrapper.querySelector('iframe');
+      if (iframeEl) {
+        iframeEl.style.height = '100000px';
+        try { iframeEl.contentWindow.postMessage({ type: 'parent-resized' }, '*'); } catch (e) {}
       }
+
+      // Puis on cale le conteneur sur la hauteur VISUELLE réelle après le scale
+      syncEmbedHeight();
     };
+
 
     btnMinus.addEventListener('click', () => { currentScale = clamp(currentScale - 0.05); applyScale(); });
     btnPlus .addEventListener('click', () => { currentScale = clamp(currentScale + 0.05); applyScale(); });
@@ -230,11 +242,11 @@ function showGearsets(roleId) {
     // Gestion du clic sur toute la carte
     gearsetDiv.addEventListener('click', () => {
       const isOpen = gearsetDiv.classList.contains('open');
-    
       if (isOpen) {
         gearsetDiv.classList.remove('open');
       } else {
         gearsetDiv.classList.add('open');
+        syncEmbedHeight(); // recale à l'ouverture
       }
     });
 
@@ -254,6 +266,8 @@ function showGearsets(roleId) {
     gearsetDiv.appendChild(zoomControls);
     gearsetDiv.appendChild(embedContainer);
     container.appendChild(gearsetDiv);
+    container.appendChild(gearsetDiv);
+    syncEmbedHeight();
   });
 }
 
@@ -267,8 +281,18 @@ window.addEventListener("message", (event) => {
         .find(ifr => ifr.contentWindow === event.source);
       if (target) {
         target.dataset.originalHeight = String(height);
-        // Hauteur exacte dictée par NW-Buddy (sans multiplier par le scale)
         target.style.height = height + "px";
+
+        // ↙️ remonte jusqu'à la carte et recale la hauteur visuelle du conteneur
+        const wrapper = target.closest('.embed-scale');
+        const embed = target.closest('.gearset-embed');
+        if (embed && wrapper) {
+          // mesure et calage après que l'iframe a posé sa nouvelle hauteur
+          requestAnimationFrame(() => {
+            const rect = wrapper.getBoundingClientRect();
+            embed.style.maxHeight = Math.ceil(rect.height) + 'px';
+          });
+        }
       }
     }
   }
