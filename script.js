@@ -212,3 +212,7 @@ window.addEventListener("message", (event) => {
     }
   }
 });
+
+window.addEventListener("message", (event) => {
+  console.log("📩 Message reçu :", event.origin, event.data);
+});
