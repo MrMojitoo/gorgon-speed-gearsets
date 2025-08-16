@@ -201,21 +201,27 @@ function showGearsets(roleId) {
     });
 
     // Fonctions de zoom
-    const clamp = (v) => Math.min(1.4, Math.max(0.6, v)); // bornes 60% ↔ 140%
+    const clamp = (v) => Math.min(2, Math.max(0.2, v)); // bornes 20% ↔ 200%
     const applyScale = () => {
       scaleWrapper.style.setProperty('--scale', String(currentScale));
       updateReadout();
+
       const iframe = scaleWrapper.querySelector('iframe');
-      if (iframe && iframe.dataset.originalHeight) {
-        iframe.style.height = (parseFloat(iframe.dataset.originalHeight) * currentScale) + 'px';
+      if (iframe) {
+        // 1) éviter tout crop en attendant le vrai resize de NW-Buddy
+        iframe.style.height = '100000px';
+
+        // 2) petit "poke" : certains embeds recalculent sur resize/message
+        try { iframe.contentWindow.postMessage({ type: 'parent-resized' }, '*'); } catch (e) {}
+        // Si l’embed ignore ce message, ce n’est pas grave : son propre ResizeObserver
+        // ou son listener 'resize' se déclenchera quand la largeur de l’iframe aura changé
+        // (elle change réellement car width = calc(100% / --scale)).
       }
-      // Optionnel: si NW-Buddy renvoie des resize, on n'a rien d'autre à faire.
-      // Sinon, on laisse l'espace vertical généreux (max-height déjà grand).
     };
 
     btnMinus.addEventListener('click', () => { currentScale = clamp(currentScale - 0.05); applyScale(); });
     btnPlus .addEventListener('click', () => { currentScale = clamp(currentScale + 0.05); applyScale(); });
-    btnReset.addEventListener('click', () => { currentScale = 1; applyScale(); });
+    btnReset.addEventListener('click', () => { currentScale = 0.5; applyScale(); });
 
     // Assembler les contrôles
     zoomControls.append(btnMinus, btnPlus, btnReset, readout);
@@ -252,20 +258,22 @@ function showGearsets(roleId) {
 }
 
 // Écoute les messages envoyés par les iframes NW-Buddy pour ajuster leur hauteur
+// Redimensionne uniquement l'iframe NW-Buddy qui a envoyé le message
 window.addEventListener("message", (event) => {
   if (event.origin.includes("nw-buddy.de") && event.data?.type === "nw-buddy-resize") {
     const height = event.data.height;
     if (typeof height === "number") {
-      document.querySelectorAll('iframe[src*="nw-buddy.de/gearsets/embed"]').forEach((iframe) => {
-        iframe.dataset.originalHeight = height;
-        // appliquer hauteur selon le scale courant
-        const wrapper = iframe.closest('.embed-scale');
-        const scale = parseFloat(wrapper.style.getPropertyValue('--scale')) || 1;
-        iframe.style.height = (height * scale) + "px";
-      });
+      const target = Array.from(document.querySelectorAll('iframe[src*="nw-buddy.de/gearsets/embed"]'))
+        .find(ifr => ifr.contentWindow === event.source);
+      if (target) {
+        target.dataset.originalHeight = String(height);
+        // Hauteur exacte dictée par NW-Buddy (sans multiplier par le scale)
+        target.style.height = height + "px";
+      }
     }
   }
 });
+
 
 
 // window.addEventListener("message", (event) => {
