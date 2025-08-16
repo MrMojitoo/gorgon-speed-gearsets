@@ -199,19 +199,20 @@ function showGearsets(roleId) {
   });
 }
 
-// Ajuste la hauteur de l'iframe à son contenu
+// Écoute les messages envoyés par les iframes NW-Buddy pour ajuster leur hauteur
 window.addEventListener("message", (event) => {
-  // Vérifie que ça vient bien de nw-buddy
-  if (event.origin.includes("nw-buddy.de")) {
-    const { id, height } = event.data || {};
-    if (id && height) {
-      const iframe = document.querySelector(`iframe[src*="${id}"]`);
-      if (iframe) {
+  if (event.origin.includes("nw-buddy.de") && event.data?.type === "nw-buddy-resize") {
+    const height = event.data.height;
+    if (typeof height === "number") {
+      // Trouver toutes les iframes NW-Buddy actuellement ouvertes
+      document.querySelectorAll('iframe[src*="nw-buddy.de/gearsets/embed"]').forEach((iframe) => {
+        // Applique la hauteur reçue
         iframe.style.height = height + "px";
-      }
+      });
     }
   }
 });
+
 
 window.addEventListener("message", (event) => {
   console.log("📩 Message reçu :", event.origin, event.data);
