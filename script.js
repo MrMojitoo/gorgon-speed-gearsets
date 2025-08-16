@@ -169,9 +169,6 @@ function showGearsets(roleId) {
     scaleWrapper.appendChild(iframe);
     embedContainer.appendChild(scaleWrapper);
 
-    // Ajout dans la carte
-    gearsetDiv.appendChild(embedContainer);
-
 
     // Gestion du clic sur toute la carte
     gearsetDiv.addEventListener('click', () => {

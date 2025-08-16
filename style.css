@@ -253,6 +253,7 @@ h1 {
 
 /* Conteneur de l'embed, fermé par défaut (animable) */
 .gearset-embed {
+  width: 100%;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s ease;
@@ -266,6 +267,7 @@ h1 {
   width: min(92vw, 1800px);          /* ~90% largeur écran, avec un plafond confort */
   margin-left: auto;
   margin-right: auto;
+  align-items: stretch; 
 }
 
 
@@ -277,10 +279,10 @@ h1 {
 
 /* Wrapper qui dézoome l'iframe */
 .embed-scale {
-  --scale: 1;                /* ← commence à 1:1 pour ne pas compresser */
+  --scale: 1;                                /* 1 par défaut, pas de dézoom */
   transform: scale(var(--scale));
   transform-origin: top left;
-  width: 100%;               /* ← pas de compensation de largeur */
+  width: calc(100% / var(--scale));          /* ← compense le scale */
 }
 
 .embed-scale iframe {
@@ -288,5 +290,6 @@ h1 {
   display: block;
   border: none;
   height: auto;
-  min-height: 1200px;        /* un garde-fou de départ; ajuste si besoin */
+  min-height: 1200px;
 }
+
