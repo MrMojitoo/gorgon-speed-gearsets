@@ -279,10 +279,10 @@ h1 {
 
 /* Wrapper qui dézoome l'iframe */
 .embed-scale {
-  --scale: 1;                                /* 1 par défaut, pas de dézoom */
+  --scale: 1;
   transform: scale(var(--scale));
   transform-origin: top left;
-  width: calc(100% / var(--scale));          /* ← compense le scale */
+  width: calc(100% / var(--scale));
 }
 
 .embed-scale iframe {
@@ -290,6 +290,40 @@ h1 {
   display: block;
   border: none;
   height: auto;
-  min-height: 1500;
+  min-height: 1500px;
 }
 
+/* Contrôles de zoom (affichés seulement en carte ouverte) */
+.zoom-controls {
+  display: none;               /* masqué par défaut */
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 6px;
+  justify-content: flex-end;
+}
+
+.gearset.open .zoom-controls {
+  display: flex;               /* visible quand la carte est ouverte */
+}
+
+.zoom-controls button {
+  all: unset;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1;
+  user-select: none;
+  transition: transform .12s ease, background .12s ease;
+}
+
+.zoom-controls button:hover { transform: translateY(-1px); background: #333; }
+
+.zoom-readout {
+  font-size: .95rem;
+  color: #cfcfcf;
+  min-width: 62px;
+  text-align: right;
+}

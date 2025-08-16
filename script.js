@@ -168,6 +168,54 @@ function showGearsets(roleId) {
     scaleWrapper.appendChild(iframe);
     embedContainer.appendChild(scaleWrapper);
 
+    // Valeur de scale initiale (1 par défaut, ou set.scale si fourni dans le JSON)
+    let currentScale = (typeof set.scale === 'number' && set.scale > 0.4 && set.scale <= 2) ? set.scale : 1;
+    scaleWrapper.style.setProperty('--scale', String(currentScale));
+
+    // --- Contrôles de zoom
+    const zoomControls = document.createElement('div');
+    zoomControls.className = 'zoom-controls';
+
+    // Boutons
+    const btnMinus = document.createElement('button');
+    btnMinus.type = 'button';
+    btnMinus.textContent = '−';
+
+    const btnPlus = document.createElement('button');
+    btnPlus.type = 'button';
+    btnPlus.textContent = '+';
+
+    const btnReset = document.createElement('button');
+    btnReset.type = 'button';
+    btnReset.textContent = 'Reset';
+
+    // Afficheur %
+    const readout = document.createElement('span');
+    readout.className = 'zoom-readout';
+    const updateReadout = () => { readout.textContent = Math.round(currentScale * 100) + '%'; };
+    updateReadout();
+
+    // Empêche le clic sur les boutons de fermer/ouvrir la carte
+    [btnMinus, btnPlus, btnReset].forEach(b => {
+      b.addEventListener('click', (e) => e.stopPropagation());
+    });
+
+    // Fonctions de zoom
+    const clamp = (v) => Math.min(1.4, Math.max(0.6, v)); // bornes 60% ↔ 140%
+    const applyScale = () => {
+      scaleWrapper.style.setProperty('--scale', String(currentScale));
+      updateReadout();
+      // Optionnel: si NW-Buddy renvoie des resize, on n'a rien d'autre à faire.
+      // Sinon, on laisse l'espace vertical généreux (max-height déjà grand).
+    };
+
+    btnMinus.addEventListener('click', () => { currentScale = clamp(currentScale - 0.05); applyScale(); });
+    btnPlus .addEventListener('click', () => { currentScale = clamp(currentScale + 0.05); applyScale(); });
+    btnReset.addEventListener('click', () => { currentScale = 1; applyScale(); });
+
+    // Assembler les contrôles
+    zoomControls.append(btnMinus, btnPlus, btnReset, readout);
+
 
     // Gestion du clic sur toute la carte
     gearsetDiv.addEventListener('click', () => {
@@ -193,6 +241,7 @@ function showGearsets(roleId) {
     gearsetDiv.appendChild(stats);
     gearsetDiv.appendChild(iconRow);
     gearsetDiv.appendChild(spellRow); // nouvelle ligne des sorts
+    gearsetDiv.appendChild(zoomControls);
     gearsetDiv.appendChild(embedContainer);
     container.appendChild(gearsetDiv);
   });
@@ -213,6 +262,6 @@ window.addEventListener("message", (event) => {
 });
 
 
-window.addEventListener("message", (event) => {
-  console.log("📩 Message reçu :", event.origin, event.data);
-});
+// window.addEventListener("message", (event) => {
+//   console.log("📩 Message reçu :", event.origin, event.data);
+// });
