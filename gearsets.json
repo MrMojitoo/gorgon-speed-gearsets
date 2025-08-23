@@ -1223,9 +1223,9 @@
             ]
           },
           "weapon2": { 
-            "icon": "items/goldcursedwh.png", 
-            "name": "Goldcursed War Hammer" ,
-            "bgColor": "goldenrod",
+            "icon": "items/venom.png", 
+            "name": "Venom" ,
+            "bgColor": "darkred",
             "spells": [
               { "icon": "spells/sweep.png", "bgColor": "darkred" },
               { "icon": "spells/jav.png", "bgColor": "darkred" }
@@ -1251,9 +1251,9 @@
             ]
           },
           "weapon2": { 
-            "icon": "items/goldcursedwh.png", 
-            "name": "Goldcursed War Hammer" ,
-            "bgColor": "goldenrod",
+            "icon": "items/venom.png", 
+            "name": "Venom" ,
+            "bgColor": "darkred",
             "spells": [
               { "icon": "spells/sweep.png", "bgColor": "darkred" },
               { "icon": "spells/jav.png", "bgColor": "darkred" }
@@ -1279,9 +1279,9 @@
             ]
           },
           "weapon2": { 
-            "icon": "items/goldcursedwh.png", 
-            "name": "Goldcursed War Hammer" ,
-            "bgColor": "goldenrod",
+            "icon": "items/venom.png", 
+            "name": "Venom" ,
+            "bgColor": "darkred",
             "spells": [
               { "icon": "spells/sweep.png", "bgColor": "darkred" },
               { "icon": "spells/jav.png", "bgColor": "darkred" }
